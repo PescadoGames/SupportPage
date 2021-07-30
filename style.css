@@ -470,14 +470,7 @@ font-family: "Meiryo UI";
 
 
 
-.numText {
-  position: relative;
-  top: 20px;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.7);
-  width: 40px;
-  color: #fff;
-}
+
 
 .prev,
 .next {
