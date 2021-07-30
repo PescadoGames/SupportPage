@@ -434,8 +434,8 @@ font-family: "Meiryo UI";
   position   : relative;
   overflow   : hidden;
                     /* 画像のサイズに合わせて変更ください */
-  width      : 480px;
-  height     : 270px;
+  width      : 200px;
+  height     : 200px;
   margin     : auto;      /* サンプルは中央寄せの背景：白 */
   background : #fff;
 }
@@ -459,8 +459,8 @@ font-family: "Meiryo UI";
  /*=== スライドのアニメーション ========================= */
 @keyframes slideAnime{
    0% { left: 100%  }
-   3% { left: 0     }
-  30% { left: 0     }
+   4% { left: 0     }
+  29% { left: 0     }
   33% { left: -100% }
  100% { left: -100% }
 }
