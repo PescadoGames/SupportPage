@@ -81,7 +81,13 @@
 
     </header>
 
-
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script> <!—jQueryのファイルの読み込み—>
+<script>
+  $('#hamburger').on('click', function(){
+      $('.icon').toggleClass('close');
+      $('.sm').slideToggle();
+  });
+</script>
 
 
 
