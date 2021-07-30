@@ -1,121 +1,46 @@
-/*------------------------------
-        Album Cover Slider
---------------------------------*/
-//start added by Chase
-var a = document.getElementsByTagName("a");
-var cfImg = document.getElementsByClassName("coverflow__image")
+var slideIndex = 1;
+showSlides(slideIndex);
 
-var scaleI = 0;
-for (scaleI; scaleI < a.length; scaleI++) {
-  if (scaleI === 3) {
-    continue;
-  } else {
-    a[scaleI].style.cursor = "default";
-    a[scaleI].addEventListener("click", prevDef);
-  }
+function plusSlide(n) {
+  showSlides((slideIndex += n));
 }
 
-function prevDef(e) {
-  e.preventDefault();
+function currentSlide(n) {
+  showSlides((slideIndex = n));
 }
 
-function forScale(coverflowPos) {
-  for (scaleI = 0; scaleI < a.length; scaleI++) {
-    a[scaleI].style.cursor = "default";
-    a[scaleI].addEventListener("click", prevDef);
-  }
-  for (scaleI = 0; scaleI < cfImg.length; scaleI++) {
-    if (cfImg[scaleI].getAttribute("data-coverflow-index") == coverflowPos) {
-      cfImg[scaleI].parentElement.style.cursor = "pointer";
-      cfImg[scaleI].parentElement.removeEventListener("click", prevDef);
+function showSlides (n){
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    var dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) {
+        slideIndex = 1
     }
-  }
-}
-//end added by Chase
-
-function setupCoverflow(coverflowContainer) {
-  var coverflowContainers;
-
-  if (typeof coverflowContainer !== "undefined") {
-    if (Array.isArray(coverflowContainer)) {
-      coverflowContainers = coverflowContainer;
-    } else {
-      coverflowContainers = [coverflowContainer];
+    if (n < 1) {
+        slideIndex = slides.length
     }
-  } else {
-    coverflowContainers = Array.prototype.slice.apply(document.getElementsByClassName('coverflow'));
-  }
-
-  coverflowContainers.forEach(function(containerElement) {
-    var coverflow = {};
-    var prevArrows, nextArrows;
-
-    //capture coverflow elements
-    coverflow.container = containerElement;
-    coverflow.images = Array.prototype.slice.apply(containerElement.getElementsByClassName('coverflow__image'));
-    coverflow.position = Math.floor(coverflow.images.length / 2) + 1;
-
-    //set indicies on images
-    coverflow.images.forEach(function(coverflowImage, i) {
-      coverflowImage.dataset.coverflowIndex = i + 1;
-    });
-
-    //set initial position
-    coverflow.container.dataset.coverflowPosition = coverflow.position;
-
-    //get prev/next arrows
-    prevArrows = Array.prototype.slice.apply(coverflow.container.getElementsByClassName("prev-arrow"));
-    nextArrows = Array.prototype.slice.apply(coverflow.container.getElementsByClassName("next-arrow"));
-
-    //add event handlers
-    function setPrevImage() {
-      coverflow.position = Math.max(1, coverflow.position - 1);
-      coverflow.container.dataset.coverflowPosition = coverflow.position;
-      //call the functin forScale added
-      forScale(coverflow.position);
+    for (i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
     }
-
-    function setNextImage() {
-      coverflow.position = Math.min(coverflow.images.length, coverflow.position + 1);
-      coverflow.container.dataset.coverflowPosition = coverflow.position;
-      //call the function Chase added
-      forScale(coverflow.position);
+    for (i = 0; i < dots.length; i++){
+        dots[i].className = dots[i].className.replace("active","");
     }
-
-    function jumpToImage(evt) {
-      coverflow.position = Math.min(coverflow.images.length, Math.max(1, evt.target.dataset.coverflowIndex));
-      coverflow.container.dataset.coverflowPosition = coverflow.position;
-      //start added by Chase
-      setTimeout(function() {
-        forScale(coverflow.position);
-      }, 1);
-      //end added by Chase
-    }
-
-    function onKeyPress(evt) {
-      switch (evt.which) {
-        case 37: //left arrow
-          setPrevImage();
-          break;
-        case 39: //right arrow
-          setNextImage();
-          break;
-      }
-    }
-    prevArrows.forEach(function(prevArrow) {
-      prevArrow.addEventListener('click', setPrevImage);
-    });
-    nextArrows.forEach(function(nextArrow) {
-      nextArrow.addEventListener('click', setNextImage);
-    });
-    coverflow.images.forEach(function(image) {
-      image.addEventListener('click', jumpToImage);
-    });
-    window.addEventListener('keyup', onKeyPress);
-  });
+	slides[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className+= " active";
 }
 
-setupCoverflow();
+
+
+function slideTime(n){
+ n=1
+ showSlides(slideIndex += n);
+ }
+ 
+setInterval(slideTime, 4000);
+
+
+
 
 
 
