@@ -69,15 +69,6 @@
 <!--▽▽ヘッダーリスト▽▽-->
       <nav class="pc">  <!--pcクラスを追記-->
         <ul>
-          <li>    <script>
-    time();
-    function time(){
-        var now = new Date();
-        document.getElementById("time").innerHTML = now.toLocaleTimeString();
-    }
-    setInterval('time()',1000);
-    </script>
-</li>
           <li><a href="">HOME</a></li>
           <li><a href="news.html">NEWS</a></li>
           <li><a href="about.html">ABOUT</a></li>
@@ -124,6 +115,14 @@
 
 <center>
 
+<script>
+    time();
+    function time(){
+        var now = new Date();
+        document.getElementById("time").innerHTML = now.toLocaleTimeString();
+    }
+    setInterval('time()',1000);
+    </script>
 
 
 </center>
