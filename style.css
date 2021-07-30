@@ -429,39 +429,43 @@ font-family: "Meiryo UI";
 
 
 
- /*=== 画像の表示エリア ================================= */
-.slide {
-  position   : relative;
-  overflow   : hidden;
-                    /* 画像のサイズに合わせて変更ください */
+.carousel {
+  background: #EEE;
+}
 
-  margin     : auto;      /* サンプルは中央寄せの背景：白 */
-  background : #fff;
+.carousel-cell {
+  width: 50%;
+  height: 500px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
 }
- 
- /*=== 画像の設定 ======================================= */
-.slide img {
-  display    : block;
-  position   : absolute;
-                      /* 画像のサイズを表示エリアに合せる */
-  width      : inherit;
-  height     : inherit;
-  left       : 100%;
-  animation  : slideAnime 9s ease infinite;
+
+.carousel-cell.is-selected {
+  background: #ED2;
 }
- 
- /*=== スライドのアニメーションを段差で開始する ========= */
-.slide img:nth-of-type(1) { animation-delay: 0s }
-.slide img:nth-of-type(2) { animation-delay: 3s }
-.slide img:nth-of-type(3) { animation-delay: 6s }
- 
- /*=== スライドのアニメーション ========================= */
-@keyframes slideAnime{
-   0% { left: 100%  }
-   4% { left: 0     }
-  29% { left: 0     }
-  33% { left: -100% }
- 100% { left: -100% }
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+/*  content: counter(carousel-cell);*/
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.carousel-cell{
+  line-height: 300px;
+  font-size: 80px;
+  text-align:center;
+color:white
+}
+
+.bg_test123{
+ width:250px;
+height:100%; 
+background:url("http://wahradio.org/lp/wp-content/uploads/2021/03/ios2.png") no-repeat;
 }
 
 
