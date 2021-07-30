@@ -434,8 +434,7 @@ font-family: "Meiryo UI";
   position   : relative;
   overflow   : hidden;
                     /* 画像のサイズに合わせて変更ください */
-  width      : 50%;
-  height     : 50%;
+
   margin     : auto;      /* サンプルは中央寄せの背景：白 */
   background : #fff;
 }
