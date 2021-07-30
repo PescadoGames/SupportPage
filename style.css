@@ -1224,10 +1224,10 @@ font-family: "Meiryo UI";
   position: absolute;
   top: 50%;
   padding: 1.5rem 2rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 3rem;
   line-height: 3rem;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
@@ -1237,13 +1237,7 @@ font-family: "Meiryo UI";
   transition: color 200ms, background 200ms;
 }
 
-.prev-arrow:hover,
-.next-arrow:hover,
-.prev-arrow:focus,
-.next-arrow:focus {
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.5);
-}
+
 
 .prev-arrow {
   left: 0%;
