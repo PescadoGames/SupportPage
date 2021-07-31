@@ -461,7 +461,7 @@ font-family: "Meiryo UI";
    width: 70%;
 
    left: 50%;
-   position: absolute;
+
    transform: translate(-50%, -50%);
    -webkit-transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%);
