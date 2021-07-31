@@ -458,11 +458,11 @@ font-family: "Meiryo UI";
 
 
 .slide {
-	position: relative;
+	position: static;
 	height:400px;
 }
 .slide img {
-	position:absolute;
+	position: static;
 	opacity:0;
 	transition:all 1s ease-in-out;
 	height:100%;
