@@ -457,76 +457,17 @@ font-family: "Meiryo UI";
 
 
 
-.hack-slider {
-   width: 70%;
-
-   left: 50%;
-   position: absolute;
-   transform: translate(-50%, -50%);
-   -webkit-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
+.slide {
+	position:relative;
+	height:400px;
 }
-
-.hack-slider .slide {
-   width: 100%;
-   position: absolute;
-   top: 0;
-   left: 0;
-   color: #328bf6;
-   font-family: "Consolas";
-   display: none;
-   text-shadow: 0px 0px 5px rgba(255, 255, 255, .4);
-   text-align: center;
+.slide img {
+	position:absolute;
+	opacity:0;
+	transition:all 1s ease-in-out;
+	height:100%;
+	object-fit:contain;
 }
-
-.hack-slider .shapes .shape {
-   background: #000;
-
-}
-
-.hack-slider .slide:first-child {
-   display: block;
-}
-
-.hack-slider .arrows {
-   width: 100%;
-   position: absolute;
-   bottom: -50px;
-   color: #328bf6;
-   text-align: center;
-}
-
-.hack-slider .arrow {
-   display: inline-block;
-   line-height: 30px;
-   width: 30px;
-   background: rgba(255, 255, 255, .1);
-   cursor: pointer;
-   opacity: .8;
-   box-shadow: 0 0 10px #328bf6;
-   margin: 0 10px;
-   border-radius: 2px;
-}
-
-.hack-slider .arrow:hover {
-   opacity: 1;
-}
-
-
-
-
-
-*,
-*:after,
-*::before {
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   text-decoration: none;
-}
-
 
 
 
