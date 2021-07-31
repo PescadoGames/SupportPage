@@ -462,11 +462,10 @@ font-family: "Meiryo UI";
 	height:400px;
 }
 .slide img {
-	position:absolute;
+	position: fixed;
 	opacity:0;
 	transition:all 1s ease-in-out;
 	height:100%;
-	width: 50%;
 	object-fit:contain;
 }
 
