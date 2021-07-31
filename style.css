@@ -459,7 +459,7 @@ font-family: "Meiryo UI";
 
 .hack-slider {
    width: 70%;
-   position: absolute;
+
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
