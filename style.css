@@ -447,7 +447,7 @@ font-family: "Meiryo UI";
 
 
 /*----------------------------*\
-        下記から長文注意！！ 
+            カルーセル 
 \*-----------------------------*/
 
 
@@ -469,7 +469,7 @@ font-family: "Meiryo UI";
 
 .hack-slider .slide {
    width: 100%;
-   position: absolute;
+
    top: 0;
    left: 0;
    color: #328bf6;
@@ -481,7 +481,7 @@ font-family: "Meiryo UI";
 
 .hack-slider .shapes .shape {
    background: #000;
-   position: absolute;
+
 }
 
 .hack-slider .slide:first-child {
@@ -490,7 +490,7 @@ font-family: "Meiryo UI";
 
 .hack-slider .arrows {
    width: 100%;
-   position: absolute;
+
    bottom: -50px;
    color: #328bf6;
    text-align: center;
