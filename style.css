@@ -466,6 +466,7 @@ font-family: "Meiryo UI";
 	opacity:0;
 	transition:all 1s ease-in-out;
 	height:100%;
+	right: 100px;
 	object-fit:contain;
 }
 
