@@ -461,7 +461,7 @@ font-family: "Meiryo UI";
    width: 70%;
 
    left: 50%;
-
+   position: static;
    transform: translate(-50%, -50%);
    -webkit-transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%);
@@ -469,7 +469,7 @@ font-family: "Meiryo UI";
 
 .hack-slider .slide {
    width: 100%;
-
+   position: static;
    top: 0;
    left: 0;
    color: #328bf6;
@@ -490,7 +490,7 @@ font-family: "Meiryo UI";
 
 .hack-slider .arrows {
    width: 100%;
-
+   position: static;
    bottom: -50px;
    color: #328bf6;
    text-align: center;
