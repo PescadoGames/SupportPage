@@ -1,39 +1,18 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlide(n) {
-  showSlides((slideIndex += n));
-}
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides (n){
-    var i;
-    var slides = document.getElementsByClassName("slide");
-    var dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++){
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++){
-        dots[i].className = dots[i].className.replace("active","");
-    }
-	slides[slideIndex-1].style.display = "block";
-	dots[slideIndex-1].className+= " active";
-}
-
-
-
-function slideTime(n){
- n=1
+$('.owl-carousel').owlCarousel({
+	nestedItemSelector: 'item',
+	loop: true,
+	nav: false,
+	items: 1,
+	lazyLoad: true,
+	autoplay: true,
+	
+})
+$("a.owl-prev").click(function() {
+	$("div.owl-prev").click();
+})
+$("a.owl-next").click(function() {
+	$("div.owl-next").click();
+})
  showSlides(slideIndex += n);
  }
  
