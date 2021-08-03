@@ -5,13 +5,10 @@
 
 }
 
-
-
-
 body {
   color: #fff;
   margin: 0;
-  font-family: 'Noto Sans JP', "sans-serif", "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "Meiryo UI","ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: 'Roboto', "Noto Sans JP", sans-serif;
   min-height: 100vh;
   background-image: linear-gradient(125deg,#6a89cc,#b8e994);
   padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
