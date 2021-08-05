@@ -166,7 +166,7 @@ a {
     height: 4px;
     background-color: white;
     border-radius: 8px;
-    transition: ease 0.30s;
+    transition: ease 1s;
   }
 
   .icon span:nth-of-type(1) {
@@ -447,9 +447,6 @@ font-family: "Meiryo UI";
 
 
 
-/*----------------------------*\
-            カルーセル 
-\*-----------------------------*/
 
 
 
@@ -458,18 +455,6 @@ font-family: "Meiryo UI";
 
 
 
-.slide {
-	position:relative;
-	height:400px;
-}
-.slide img {
-	position:absolute;
-	opacity:0;
-	transition:all 1s ease-in-out;
-	height:100%;
-	width:100%;
-	object-fit:contain;
-}
 
 
 
@@ -483,6 +468,8 @@ font-family: "Meiryo UI";
 
 .link {
 
+    width: 40px;
+    height: 60px;
     border: 0;
     background: none;
     display: block;
@@ -492,7 +479,7 @@ font-family: "Meiryo UI";
     padding: 14px 40px;
     outline: none;
     color: white;
-    border-radius: 24px;
+    border-radius: 10px;
     transition: 0.75s;
     cursor: pointer;
 	
@@ -511,7 +498,27 @@ font-family: "Meiryo UI";
 
 
 
+.download {
 
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #0066DB;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.75s;
+    cursor: pointer;
+	
+}
+
+
+.download:hover{
+    background: #0066DB;
+}
 
 
 
