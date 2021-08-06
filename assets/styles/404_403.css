@@ -20,7 +20,7 @@ body{
   margin: 0;
   font-weight: 900;
   letter-spacing: 20px;
-  background: url(/404.png) center no-repeat;
+  background: url(/assets/error/404.png) center no-repeat;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   transition: 3s;
