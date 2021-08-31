@@ -274,7 +274,18 @@ font-size: 30px;
 
 
 
+.kiyaku {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 30px;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, sans-serif;
+}
 
+.kiyaku h4 {
+  display: inline-block;
+  text-align: left;
+  font-weight:lighter;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, sans-serif;
 
 
 
