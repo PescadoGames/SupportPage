@@ -74,38 +74,11 @@ padding: 8px 0 0 6px;
   color: #ffff00;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 header {
   height: 60px;
   width: 100%;
   padding: 0px 15px;
-  background-color: rgba(34, 49, 52, 0.9);
+  background-image: linear-gradient(125deg,#00a56a,#0078a5);
   position: fixed;
   top: 0;
   z-index: 10;
@@ -243,17 +216,6 @@ dl::after {
     display: block;
     clear: both;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .side-menu{
   position: fixed;
@@ -426,38 +388,6 @@ font-family: "Meiryo UI";
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .pglinux {
 font-size: 40px;
 font-family: "Meiryo UI";	
@@ -489,14 +419,6 @@ font-family: "Meiryo UI";
     background: #0066DB;
 }
 
-
-
-
-
-
-
-
-
 .download {
 
         
@@ -521,21 +443,3 @@ font-family: "Meiryo UI";
 .download:hover{
     background: #0066DB;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
