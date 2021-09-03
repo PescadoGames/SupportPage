@@ -74,6 +74,36 @@ padding: 8px 0 0 6px;
   color: #ffff00;
 }
 
+.kiyaku {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+.kiyaku h4 {
+  display: inline-block;
+  text-align: left;
+  font-weight:lighter;
+}
+
+.kiyaku h1 {
+  display: inline-block;
+  text-align: left;
+  font-weight:lighter;
+}
+
+.kiyaku h2 {
+  display: inline-block;
+  text-align: left;
+  font-weight:lighter;
+}
+
+.kiyaku h3 {
+  display: inline-block;
+  text-align: left;
+  font-weight:lighter;
+}
+
 header {
   height: 60px;
   width: 100%;
@@ -274,18 +304,7 @@ font-size: 30px;
 
 
 
-.kiyaku {
-  text-align: center;
-  margin: 0 auto;
-  padding: 10px 30px;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, sans-serif;
-}
 
-.kiyaku h4 {
-  display: inline-block;
-  text-align: left;
-  font-weight:lighter;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, sans-serif;
 
 
 
