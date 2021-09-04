@@ -20,7 +20,7 @@ body{
   margin: 0;
   font-weight: 900;
   letter-spacing: 20px;
-  background: url(/assets/error/404.png) center no-repeat;
+  background-image: linear-gradient(125deg,#005078,#00785D);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   transition: 3s;
