@@ -23,7 +23,7 @@ body{
   background-image: linear-gradient(125deg,#005078,#00785D);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  transition: 4s;
+  transition: 3s;
 }
 
 .container a{
