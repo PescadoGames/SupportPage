@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
     <meta name="format-detection" content="telephone=no">
     <title>About | PescadoGames</title>
-
-
-
-
-
     <meta property="og:title" content="PescadoGames | About" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.pescadogames.ml/about.html" />
@@ -20,31 +15,15 @@
     <link rel="icon" type="image/x-icon" href="assets/icons/NewLogo_Transparent_1040x1038.png">
     <link rel="shortcut icon" href="assets/icons/NewLogo_Transparent_1040x1038.png">
     <link rel="stylesheet" href="/assets/styles/style.css">
-
-
-
-
-
 </head>
 <body>
-
-
-
-
-
-
-
 <!--ヘッダー-->
     <header>
-
-
 <!--▽▽ヘッダーロゴ▽▽-->
       <div class="logo">
          <img src="assets/icons/NewLogo_Transparent_56x56.png" alt="Logo">
       </div>
 <!--△△ヘッダーロゴ△△-->
-
-
 <!--▽▽ハンバーガーメニュー▽▽-->
       <div id="hamburger">
           <div class="icon">
@@ -54,8 +33,6 @@
           </div>
       </div>
 <!--△△ハンバーガーメニュー△△-->
-
-
 <!--▽▽ハンバーガーメニューのリスト▽▽-->
       <nav class="sm">
         <ul>
@@ -67,8 +44,6 @@
        </ul>
      </nav>
 <!--△△ハンバーガーメニューのリスト△△-->
-
-
 <!--▽▽ヘッダーリスト▽▽-->
       <nav class="pc">  <!--pcクラスを追記-->
         <ul>
@@ -80,60 +55,14 @@
         </ul>
       </nav>
 <!--△△ヘッダーリスト△△-->
-
-
-    </header>
-
-
-<!--▽▽jQuery▽▽-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script>
-        $('#hamburger').on('click', function(){
-        $('.icon').toggleClass('close');
-        $('.sm').slideToggle();
-        });
-      </script>
-<!--△△jQuery△△-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</header>
 <center>
-
 <img src="assets/icons/NewLogo_Transparent_1040x1038.png" alt="Logo"  width="20%" height="20%">
 </center>
 <center>
 <span style="font-family: Meiryo" class="about">PescadoGamesの目標はただ一つそれは<b>世界のゲーム開発会社になること。</b></span>
-
 </center>
-
-
-
-
-
-
 <center>
-
 <section class="wrapper">
     <div class="container">
         <div class="content">
@@ -149,51 +78,21 @@
         </div>
     </div>
 </section>
-
 </center>
-
-
-
-
-
-
-
-
-
-<footer>
-
-
- <footer id="footer">
-        <center>
-            <div class="Footer__inner">
+<center>
 <img src="assets/icons/NewLogo_Transparent_1040x1038.png" alt="PescadoGames"  width="10%" height="10%">
 <center>
 <span class="copyright">copyright(c)2019-2021 PescadoGames All right reserved</span>
-
-
-
-
 </center>
-
-        </center>
-
-
-
-
-
-
-
-
-        <!--/Footer__body-->
-        <!--/Footer__inner-->
-        <!--/Footer-->
-    </footer>
-
-
-
-    <script type="text/javascript" src="/assets/js/script.js"></script>
-
-
-
+</center>
+<script type="text/javascript" src="/assets/js/script.js"　defer></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script> <!-- jQueryのファイルの読み込み -->
+<script src="/assets/js/fonts.js" async></script>
+<script>
+  $('#hamburger').on('click', function() {
+    $('.icon').toggleClass('close');
+    $('.sm').slideToggle();
+  });
+</script>
 </body>
 </html>
