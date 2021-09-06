@@ -474,20 +474,6 @@ font-family: "Meiryo UI";
     background: #0066DB;
 }
 
-.news {
-  padding: 50px 0;
-  background: #FFF7EA;
-}
-
-
-.inner {
-  width: 80%;
-  background-color: #fff;
-  margin: 0 auto;
-  padding: 65px 0 100px;
-}
-
-
 .sub_ttl {
   font-size: 30px;
   text-align: center;
