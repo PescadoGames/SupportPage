@@ -486,6 +486,12 @@ font-family: "Meiryo UI";
   margin: 0 5%;
 }
 
+.news_list u {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .news_list_item {
   padding: 25px 0;
   border-bottom: 1px solid #E6E6E6;
