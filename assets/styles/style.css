@@ -15,7 +15,9 @@ body {
 
 }
 
-
+center{
+text-align: center;
+}
 
 .cp_ipcheck {
   padding: 20px 0;
