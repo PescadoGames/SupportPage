@@ -408,8 +408,28 @@ font-size: 30px;
 
 
 
+.heading3{
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #0066DB;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.75s;
+    cursor: pointer;
+}
 
-
+.heading3:hover{
+    background: #0066DB;
+}
 
 .copyright{
 
