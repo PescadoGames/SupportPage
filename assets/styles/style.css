@@ -297,8 +297,6 @@ font-size: 30px;
     font-weight: normal;
     text-align: center;
     color: #fff;
-
-
     border: 0;
     background: none;
     display: block;
@@ -367,6 +365,30 @@ font-size: 30px;
 }
 
 .heading3:hover{
+    background: #0066DB;
+}
+
+.heading4{
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #0066DB;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.75s;
+    cursor: pointer;
+}
+
+.wrapper .text .heading2:hover{
     background: #0066DB;
 }
 
