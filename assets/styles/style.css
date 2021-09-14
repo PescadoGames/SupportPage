@@ -173,7 +173,7 @@ a {
     -webkit-transform:rotateZ(360deg);
 }
 
-/* 一回転を行うクラス */
+/* 十回転を行うクラス */
 .turn10{
     /* transition効果の設定 */
     transition: all 20s linear;
@@ -186,6 +186,18 @@ a {
     -webkit-transform:rotateZ(3600deg);
 }
 
+/* 五回転を行うクラス */
+.turn5{
+    /* transition効果の設定 */
+    transition: all 10s linear;
+    -moz-transition: all 10s linear;
+    -webkit-transition: all 10s linear;
+ 
+    /* 360度回転 */
+    transform: rotateZ(1800deg);
+    -moz-transition:rotateZ(1800deg);
+    -webkit-transform:rotateZ(1800deg);
+}
 
 dl{
 
