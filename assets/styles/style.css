@@ -160,9 +160,31 @@ a {
   }
 }
 
+/* 一回転を行うクラス */
+.turn{
+    /* transition効果の設定 */
+    transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+ 
+    /* 360度回転 */
+    transform: rotateZ(360deg);
+    -moz-transition:rotateZ(360deg);
+    -webkit-transform:rotateZ(360deg);
+}
 
-
-
+/* 一回転を行うクラス */
+.turn10{
+    /* transition効果の設定 */
+    transition: all 20s linear;
+    -moz-transition: all 20s linear;
+    -webkit-transition: all 20s linear;
+ 
+    /* 360度回転 */
+    transform: rotateZ(3600deg);
+    -moz-transition:rotateZ(3600deg);
+    -webkit-transform:rotateZ(3600deg);
+}
 
 
 dl{
