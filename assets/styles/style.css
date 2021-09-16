@@ -595,7 +595,7 @@ font-family: "Meiryo UI";
 	overflow: hidden;
 	width: 100%;
 	margin: 0 auto;
-	color: #ffffff;
+	background-color:rgba(255,0,0,0.25);
 }
 .cp_actab input {
 	position: absolute;
