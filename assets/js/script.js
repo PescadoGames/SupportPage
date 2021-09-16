@@ -33,3 +33,63 @@ function turn5(){
         document.body.className = ori;
     },10000);
 }
+
+// 元のクラス名を保存
+var origin = document.body.className;
+// 斜め状態 初期値=false
+var tilt_flag = false;
+function tilt(obj){
+    // 現在の状態とは逆にする。
+    tilt_flag = !tilt_flag;
+    if(tilt_flag ){
+        // 斜め実行
+        obj.value = "元に戻す";
+        // bodyのクラスに追加
+        document.body.className = origin + " tilt"; 
+    }else{
+        // 元に戻す
+        obj.value = "斜め";
+        // CSSを初期値に戻す
+        document.body.className = origin; 
+    }
+}
+
+// 元のクラス名を保存
+var origin = document.body.className;
+// 斜め状態 初期値=false
+var tilt_flag = false;
+function tilt(obj){
+    // 現在の状態とは逆にする。
+    tilt_flag = !tilt_flag;
+    if(tilt_flag ){
+        // 斜め実行
+        obj.value = "元に戻す5";
+        // bodyのクラスに追加
+        document.body.className = origin + " tilt"; 
+    }else{
+        // 元に戻す
+        obj.value = "斜め5";
+        // CSSを初期値に戻す
+        document.body.className = origin; 
+    }
+}
+
+// 元のクラス名を保存
+var origin = document.body.className;
+// 斜め状態 初期値=false
+var tilt_flag = false;
+function tilt(obj){
+    // 現在の状態とは逆にする。
+    tilt_flag = !tilt_flag;
+    if(tilt_flag ){
+        // 斜め実行
+        obj.value = "元に戻す10";
+        // bodyのクラスに追加
+        document.body.className = origin + " tilt"; 
+    }else{
+        // 元に戻す
+        obj.value = "斜め10";
+        // CSSを初期値に戻す
+        document.body.className = origin; 
+    }
+}
