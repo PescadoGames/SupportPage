@@ -604,7 +604,7 @@ font-family: "Meiryo UI";
 .acd-label:after{
     background: #00479d;
     box-sizing: border-box;
-    content: '\f067';
+    content: '＋';
     display: block;
     font-family: "Font Awesome 5 Free";
     height: 52px;
@@ -623,7 +623,7 @@ font-family: "Meiryo UI";
     visibility: hidden;
 }
 .acd-check:checked + .acd-label:after{
-    content: '\f068';
+    content: '－';
 }
 .acd-check:checked + .acd-label + .acd-content{
     height: 50px;
