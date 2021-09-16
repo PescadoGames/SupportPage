@@ -590,59 +590,44 @@ font-family: "Meiryo UI";
     }
 }
 
-.cp_actab {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	margin: 0 auto;
-	background-color:rgba(0,0,0,0);
+.acd-check{
+    display: none;
 }
-.cp_actab input {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
+.acd-label{
+    background: #0068b7;
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    padding: 10px;
+    position: relative;
 }
-.cp_actab label {
-	font-weight: bold;
-	line-height: 3;
-	position: relative;
-	display: block;
-	padding: 0 0 0 1em;
-	cursor: pointer;
-	margin: 0 0 1px 0;
-	background-color:rgba(0,0,0,0);
+.acd-label:after{
+    background: #00479d;
+    box-sizing: border-box;
+    content: '\f067';
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    height: 52px;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    top: 0px;
 }
-.cp_actab .cp_actab-content {
-	overflow: hidden;
-	max-height: 0;
-	-webkit-transition: max-height 1s;
-	transition: max-height 1s;
-	color: #333333;
-	background: #f1c6c6;
+.acd-content{
+    border: 1px solid #333;
+    display: block;
+    height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    transition: .5s;
+    visibility: hidden;
 }
-.cp_actab .cp_actab-content p {
-	margin: 1em;
+.acd-check:checked + .acd-label:after{
+    content: '\f068';
 }
-/* :checked */
-.cp_actab input:checked ~ .cp_actab-content {
-	max-height: 20em;
-}
-/* Icon */
-.cp_actab label::after {
-	line-height: 3;
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: block;
-	width: 3em;
-	height: 3em;
-	-webkit-transition: all 1s;
-	transition: all 1s;
-	text-align: center;
-}
-.cp_actab input[type=checkbox] + label::after {
-	content: '+';
-}
-.cp_actab input[type=checkbox]:checked + label::after {
-	transform: rotate(315deg);
+.acd-check:checked + .acd-label + .acd-content{
+    height: 50px;
+    opacity: 1;
+    padding: 10px;
+    visibility: visible;
 }
