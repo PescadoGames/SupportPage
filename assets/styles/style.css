@@ -636,8 +636,8 @@ font-family: "Meiryo UI";
 	display: block;
 	width: 3em;
 	height: 3em;
-	-webkit-transition: all 0.35s;
-	transition: all 0.35s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
 	text-align: center;
 }
 .cp_actab input[type=checkbox] + label::after {
