@@ -63,12 +63,12 @@ function tilt(obj){
     tilt_flag = !tilt_flag;
     if(tilt_flag ){
         // 斜め実行
-        obj.value = "元に戻す5";
+        obj.value = "元に戻す";
         // bodyのクラスに追加
-        document.body.className = origin + " tilt"; 
+        document.body.className = origin + " tilt5"; 
     }else{
         // 元に戻す
-        obj.value = "斜め5";
+        obj.value = "結構斜め";
         // CSSを初期値に戻す
         document.body.className = origin; 
     }
@@ -83,12 +83,12 @@ function tilt(obj){
     tilt_flag = !tilt_flag;
     if(tilt_flag ){
         // 斜め実行
-        obj.value = "元に戻す10";
+        obj.value = "元に戻す";
         // bodyのクラスに追加
-        document.body.className = origin + " tilt"; 
+        document.body.className = origin + " tilt10"; 
     }else{
         // 元に戻す
-        obj.value = "斜め10";
+        obj.value = "横";
         // CSSを初期値に戻す
         document.body.className = origin; 
     }
