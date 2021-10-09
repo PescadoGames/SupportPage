@@ -12,15 +12,7 @@ body {
   min-height: 100vh;
   background-image: linear-gradient(125deg,#313131,#313131);
   padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
-    /* transition効果の設定 */
-    transition: all 10s linear;
-    -moz-transition: all 10s linear;
-    -webkit-transition: all 10s linear;
- 
-    /* 360度回転 */
-    transform: rotateZ(1800deg);
-    -moz-transition:rotateZ(1800deg);
-    -webkit-transform:rotateZ(1800deg);
+
 }
 
 .center{
@@ -205,6 +197,27 @@ a {
     transform: rotateZ(1800deg);
     -moz-transition:rotateZ(1800deg);
     -webkit-transform:rotateZ(1800deg);
+}
+
+/* 斜めに表示するクラス（1度） */
+.tilt{
+    transform: rotateZ(1deg);
+    -moz-transition:rotateZ(1deg);
+    -webkit-transform:rotateZ(1deg);
+}
+
+/* 斜めに表示するクラス（1度） */
+.tilt5{
+    transform: rotateZ(45deg);
+    -moz-transition:rotateZ(45deg);
+    -webkit-transform:rotateZ(45deg);
+}
+
+/* 斜めに表示するクラス（1度） */
+.tilt10{
+    transform: rotateZ(90deg);
+    -moz-transition:rotateZ(90deg);
+    -webkit-transform:rotateZ(90deg);
 }
 
 dl{
@@ -596,4 +609,62 @@ font-family: "Meiryo UI";
     .news_list_item a {
         padding-right: 0;
     }
+}
+
+.acd-check{
+    display: none;
+}
+.acd-label{
+    background: #0068b7;
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    padding: 10px;
+    position: relative;
+}
+.acd-label:after{
+    background: #00479d;
+    box-sizing: border-box;
+    content: '＋';
+    display: block;
+    font-family: "Noto Sans JP";
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+.acd-content{
+    display: block;
+    height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    transition: 1s;
+    visibility: hidden;
+}
+.acd-check:checked + .acd-label:after{
+    content: '－';
+}
+.acd-check:checked + .acd-label + .acd-content{
+    height: 50px;
+    opacity: 1;
+    padding: 10px;
+    visibility: visible;
+}
+
+.midasi {
+  position: relative;
+  padding: 1rem .5rem;
+}
+
+.midasi:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#2af598), to(#009efd));
+  background-image: -webkit-linear-gradient(right, #2af598 0%, #009efd 100%);
+  background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
 }
