@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
   min-height: 100vh;
-  background-image: linear-gradient(125deg,#1F1F1F,#000000);
+  background-image: linear-gradient(125deg,#313131,#313131);
   padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
     /* transition効果の設定 */
     transition: all 10s linear;
