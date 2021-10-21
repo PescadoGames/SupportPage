@@ -294,6 +294,11 @@ dl::after {
   cursor: pointer;
 }
 
+.tsm {
+display: none;
+}
+
+
 
 
 .about{
