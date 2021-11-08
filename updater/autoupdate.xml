@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
 <title>サンプルプログラム 自動更新プログラム</title>
-<version>1.1.0.0</version>
+<version>2.0</version>
 <url>http://sample.test.org/updater/sample.msi</url>
 <changelog>http://sample.test.org/updater/rerease_notes.htm</changelog>
 </item>
