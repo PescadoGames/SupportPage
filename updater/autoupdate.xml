@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-<title>サンプルプログラム 自動更新プログラム</title>
+<title>PescadoGamesLauncher 自動更新プログラム</title>
 <version>1.2.0.0</version>
 <url>https://dl.dropboxusercontent.com/s/xu1zrfkx87lafmo/Setup.msi</url>
 <changelog>http://sample.test.org/updater/rerease_notes.htm</changelog>
