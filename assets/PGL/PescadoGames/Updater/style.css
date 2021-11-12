@@ -4,6 +4,5 @@ body {
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
   min-height: 100vh;
   background-image: linear-gradient(125deg,#005078,#00785D);
-  padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
 
 }
