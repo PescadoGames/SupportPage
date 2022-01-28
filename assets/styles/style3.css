@@ -1,3 +1,38 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  color: #fff;
+  margin: 0;
+  font-family: 'Roboto', "Noto Sans JP", sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(125deg,#005078,#00785D);
+  padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+
+}
+
+.center{
+text-align: center;
+}
+
+.kiyaku {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+.kiyaku h4 {
+  display: inline-block;
+  text-align: left;
+  font-weight:lighter;
+}
+
+.kiyaku h1 {
+  display: inline-block;
   text-align: left;
   font-weight:lighter;
 }
@@ -48,7 +83,7 @@ a {
   padding: 0 20px;
 }
 
-.sm {
+.pc {
   display: none;
 }
 
@@ -58,10 +93,6 @@ a {
 ************************************/
 
 @media (max-width: 900px) {
-
-  .pc {
-
-  }
 
   #hamburger {
     background-color: transparent;
