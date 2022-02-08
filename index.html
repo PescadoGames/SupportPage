@@ -26,26 +26,15 @@
   gtag('config', 'G-TMK183GM24');
 </script>
 <script>
-    var cat1 = [
-  "https://snapdragon-fixed-rayon.glitch.me",
-  "https://www.bot.pescadogames.ml",
-];
-
-var myFrame = document.getElementsByClassName("frame")[0];
-
-function getRandomUrl(myFrame) {
-  var index = Math.floor(Math.random() * cat1.length);
-  var url = cat1[index];
-  myFrame.src = url;
+window.onload = function(){
+　var c = 2; //ランダムに表示するiframe内URLの数
+　var ifm = document.getElementById('【表示するiframeのIDを入れてね】');
+　var r = Math.floor(Math.random()*c);
+　var urls = new Array();
+　urls[0] = 'https://snapdragon-fixed-rayon.glitch.me';
+　urls[1] = 'https://bot.pescadogames.ml';
+　ifm.src = urls[r];
 }
-
-function codeAddress() {
-  getRandomUrl(myFrame);
-}
-
-codeAddress();
-
-console.log(myFrame.src);
     </script>
   </head>
   <body>
