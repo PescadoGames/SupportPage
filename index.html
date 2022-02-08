@@ -25,6 +25,28 @@
 
   gtag('config', 'G-TMK183GM24');
 </script>
+<script>
+    var cat1 = [
+  "https://snapdragon-fixed-rayon.glitch.me",
+  "https://www.bot.pescadogames.ml",
+];
+
+var myFrame = document.getElementsByClassName("frame")[0];
+
+function getRandomUrl(myFrame) {
+  var index = Math.floor(Math.random() * cat1.length);
+  var url = cat1[index];
+  myFrame.src = url;
+}
+
+function codeAddress() {
+  getRandomUrl(myFrame);
+}
+
+codeAddress();
+
+console.log(myFrame.src);
+    </script>
   </head>
   <body>
   <!-- ヘッダー -->
@@ -91,7 +113,7 @@
 
 <div class="center">
 <div class="pc">
-<iframe src=https://snapdragon-fixed-rayon.glitch.me width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">この部分はiframe対応のブラウザでご利用ください</iframe>
+<iframe class="frame" src="" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">この部分はiframe対応のブラウザでご利用ください</iframe>
 </div>
 </div>
     
