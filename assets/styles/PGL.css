@@ -31,12 +31,12 @@ text-align: center;
 .cp_cssslider {
 	width: 300px;
 	padding-top: 200px; /* 画像の高さ */
-	position: absolute;
+	position: fixed;
 	margin: 2em auto;
 	text-align: center;
 }
 .cp_cssslider > img {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	transition: all 0.5s;
