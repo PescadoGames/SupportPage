@@ -29,8 +29,8 @@ text-align: center;
 	        box-sizing: border-box;
 }
 .cp_cssslider {
-	width: 400px;
-	padding-top: 300px; /* 画像の高さ */
+	width: 300px;
+	padding-top: 200px; /* 画像の高さ */
 	position: relative;
 	margin: 2em auto;
 	text-align: center;
