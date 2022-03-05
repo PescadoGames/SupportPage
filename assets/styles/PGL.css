@@ -30,7 +30,7 @@ text-align: center;
 .slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
    width:94%;
     margin:0 auto;
-	@@ -72,12 +48,12 @@ text-align: center;
+	text-align: center;
 
 .slick-dots {
     text-align:center;
@@ -43,7 +43,7 @@ margin:0 5px;
 }
 
 .slick-dots button {
-	@@ -93,674 +69,30 @@ margin:0 5px;
+	margin:0 5px;
 .slick-dots .slick-active button{
     background:#333;/*ドットボタンの現在地表示の色*/
 }
