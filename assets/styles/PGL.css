@@ -72,7 +72,7 @@ text-align: center;
 
 .slick-dots li {
     display:inline-block;
-	margin:0 0px;
+	margin:0 -5px;
 }
 
 .slick-dots button {
