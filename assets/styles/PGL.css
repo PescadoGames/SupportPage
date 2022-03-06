@@ -19,8 +19,6 @@ body {
 text-align: center;
 }
 
-@charset "utf-8";
-
 /*==================================================
 スライダーのためのcss
 ===================================*/
@@ -69,7 +67,7 @@ text-align: center;
 
 .slick-dots {
     text-align:center;
-	margin:20px 0 0 0;
+	margin:0 0 0 0;
 }
 
 .slick-dots li {
