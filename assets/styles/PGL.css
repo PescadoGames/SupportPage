@@ -23,6 +23,17 @@ text-align: center;
   display: inline;
  }
 
+    .swiper-container {
+      position: relative;
+      overflow: hidden;
+    }
+    .swiper-container.visible {
+      overflow: visible;
+    }
+    .sample-swiper-cards {
+      padding: 0 50px;
+    }
+
 .carousel-wrapper {
   position: relative;
 }
