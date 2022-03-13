@@ -22,3 +22,8 @@ text-align: center;
 .inline {
   display: inline;
  }
+
+.Slider {
+  width: 30%;
+  height: 30%;
+}
