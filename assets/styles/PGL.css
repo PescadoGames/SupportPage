@@ -21,9 +21,9 @@ text-align: center;
 
 .slider{
     /* スライドを表示させる画面の横幅(≒スライド１枚あたりの横幅) */
-    width: 1600px;
+    width: 500px;
     /* スライドを表示させる画面の縦幅(≒スライド１枚あたりの縦幅) */
-    height: 1066px;
+    height: 300px;
     /* はみ出した要素は隠れるようにする */
     overflow: hidden;
 }
