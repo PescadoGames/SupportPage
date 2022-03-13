@@ -29,6 +29,7 @@ text-align: center;
 	overflow: hidden;
 	height: 50%; /* Or set a fixed height */
 	width: 50%;
+	margin: 0px 0px 0px 100px;
 }
 
 /* SLIDER */
@@ -157,6 +158,7 @@ text-align: center;
 	text-align: center;
 	height: 50%; /* Or set a fixed height */
 	width: 50%;
+	margin: 0px 0px 0px 100px;
 }
 .CSSgal .slider h2 {
 	margin-top: 40vh;
