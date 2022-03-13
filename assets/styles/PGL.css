@@ -23,6 +23,7 @@ text-align: center;
 	position: relative;
 	overflow: hidden;
 	height: 100%; /* Or set a fixed height */
+	margin: 0px 50px 0px 0;
 }
 
 /* SLIDER */
