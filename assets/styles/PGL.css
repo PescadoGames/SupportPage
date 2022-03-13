@@ -28,6 +28,7 @@ text-align: center;
 .slide-wrap {
   margin: 5% auto 0;
   width: 50%;
+  float:left;
 }
 .slide-mask {
   position: relative;
