@@ -153,6 +153,8 @@ text-align: center;
 .CSSgal{
 	color: #fff;	
 	text-align: center;
+	height: 50%; /* Or set a fixed height */
+	width: 50%;
 }
 .CSSgal .slider h2 {
 	margin-top: 40vh;
