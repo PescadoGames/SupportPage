@@ -26,8 +26,8 @@ text-align: center;
 .CSSgal {
 	position: relative;
 	overflow: hidden;
-	height: 100%; /* Or set a fixed height */
-	margin: 0px 20px 0px 0;
+	height: 50%; /* Or set a fixed height */
+	width: 50%;
 }
 
 /* SLIDER */
@@ -46,8 +46,8 @@ text-align: center;
 	display: inline-block;
 	white-space: normal;
 	vertical-align: top;
-	height: 30%;
-	width: 30%;
+	height: 100%;
+	width: 100%;
 	background: none 50% no-repeat;
 	background-size: cover;
 }
