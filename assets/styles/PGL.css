@@ -21,9 +21,9 @@ text-align: center;
 
 .slider{
     /* スライドを表示させる画面の横幅(≒スライド１枚あたりの横幅) */
-    width: 500px;
+    width: 700px;
     /* スライドを表示させる画面の縦幅(≒スライド１枚あたりの縦幅) */
-    height: 300px;
+    height: 500px;
     /* はみ出した要素は隠れるようにする */
     overflow: hidden;
 }
@@ -43,9 +43,9 @@ text-align: center;
 }
 .slider__item{
     /* スライド１枚あたりの横幅 */
-    width: 500px;
+    width: 700px;
     /* スライド１枚あたりの縦幅 */
-    height: 300px;
+    height: 500px;
     /* スライドを横一列に並べる */
     float: left;
 }
