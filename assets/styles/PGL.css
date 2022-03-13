@@ -42,11 +42,7 @@ text-align: center;
 }
 .slide {
   height: 100%;
-	font: 100 90px/135px "lato";
-	font-size: 2em;
-	color: #fff;
-	text-align: center;
-	text-transform: uppercase;  
+  text-align: center;
 }
 
 /* nav
