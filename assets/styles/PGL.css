@@ -43,9 +43,9 @@ text-align: center;
 }
 .slider__item{
     /* スライド１枚あたりの横幅 */
-    width: 1600px;
+    width: 500px;
     /* スライド１枚あたりの縦幅 */
-    height: 1066px;
+    height: 300px;
     /* スライドを横一列に並べる */
     float: left;
 }
