@@ -29,6 +29,7 @@ text-align: center;
   margin: 5% auto 0;
   width: 50%;
   float:left;
+  height: 130px;
 }
 .slide-mask {
   position: relative;
@@ -41,6 +42,8 @@ text-align: center;
   width: 100%;
 }
 .slide {
+	height: 130px;
+	width: 130px;
 	font: 100 90px/135px "lato";
 	font-size: 2em;
 	color: #fff;
