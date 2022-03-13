@@ -57,19 +57,13 @@ text-align: center;
   }
 }
 .carousel-list:nth-child(1) {
-  background-image: url(./img/hamster.jpg);
+  background-image: url(https://www.pescadogames.ml/assets/services/Android1080720.png);
 }
 .carousel-list:nth-child(2) {
-  background-image: url(./img/sheep.jpg);
+  background-image: url(https://www.pescadogames.ml/assets/services/PuzzleLinker0.png);
 }
 .carousel-list:nth-child(3) {
-  background-image: url(./img/turtle.jpg);
-}
-.carousel-list:nth-child(4) {
-  background-image: url(./img/bird.jpg);
-}
-.carousel-list:nth-child(5) {
-  background-image: url(./img/lion.jpg);
+  background-image: url(https://www.pescadogames.ml/assets/services/PuzzleLinker1.png);
 }
 /* clipで非表示指定（スクリーンリーダー対策） */
 .carousel-img {
