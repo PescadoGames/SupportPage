@@ -32,7 +32,7 @@ text-align: center;
 .slide-mask {
   position: relative;
   overflow: hidden;
-  height: 130px;
+  height: 100%;
 }
 .slide-group {
   position: absolute; 
@@ -41,7 +41,7 @@ text-align: center;
   width: 100%;
 }
 .slide {
-  height: 130px;
+  height: 100%;
 	font: 100 90px/135px "lato";
 	font-size: 2em;
 	color: #fff;
