@@ -24,6 +24,7 @@ text-align: center;
  }
 
 .CSSgal {
+	float: left;
 	position: relative;
 	overflow: hidden;
 	height: 50%; /* Or set a fixed height */
@@ -151,6 +152,7 @@ text-align: center;
    CSSgal CUSTOM STYLES / OVERRIDES HERE: */
 
 .CSSgal{
+	float: left;
 	color: #fff;	
 	text-align: center;
 	height: 50%; /* Or set a fixed height */
