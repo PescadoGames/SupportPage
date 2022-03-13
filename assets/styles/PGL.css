@@ -23,135 +23,50 @@ text-align: center;
   display: inline;
  }
 
-.carousel {
-  width: 600px;
-  height: calc(600px * 0.5625);
-  position: relative;
-  margin: 0 auto;
-  float: left;
+section.awSlider .carousel{
+  display:table;
+  z-index:2;
+  -moz-box-shadow: 0 0 4px #444;
+	-webkit-box-shadow: 0 0 4px #444;
+	box-shadow: 0 0 15px rgba(1,1,1,.5);
 }
-.carousel-area {
-  /* リスト数×リスト幅を計算してwidth指定してもいいが、汎用性を考慮してjQueryで計算代入する */
-  height: 100%;
-  position: absolute;
-  display: flex;
+
+section.awSlider{
+  margin:30px auto;
+  padding:30px;
+  position:relative;
+  display:table;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-/* object-fitを使用せずに画像トリミングさせるためにbackgroundで指定 */
-.carousel-list {
-  width: 600px;
-  height: 100%;
-  margin-right: 30px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+section.awSlider:hover > img{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity:1;
 }
-@media screen and (max-width: 600px) {
-  .carousel {
-    width: 300px;
-    height: calc(300px * 0.5625);
-  }
-  .carousel-list {
-    width: 300px;
-    height: calc(300px * 0.5625);
-    margin-right: 0;
-  }
+
+section.awSlider img{
+   pointer-events: none;
 }
-.carousel-list:nth-child(1) {
-  background-image: url(https://www.pescadogames.ml/assets/services/Android1080720.png);
-}
-.carousel-list:nth-child(2) {
-  background-image: url(https://www.pescadogames.ml/assets/services/PuzzleLinker0.png);
-}
-.carousel-list:nth-child(3) {
-  background-image: url(https://www.pescadogames.ml/assets/services/PuzzleLinker1.png);
-}
-/* clipで非表示指定（スクリーンリーダー対策） */
-.carousel-img {
-  width: 1px;
-  height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  position: absolute;
-}
-/*********** スライド送りボタン ***********/
-/* 共有パーツ */
-.arow-wrap {
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.arrow-btn {
-  width: 48px;
-  height: 48px;
-  background-color: rgba(113, 135, 245, 0.8);
-  border-radius: 50%;
-  transition: .2s;
-}
-.arrow-btn:focus {
-  box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
-}
-.arrow-btn:hover {
-  background-color: rgb(51, 79, 216);
-  box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
-}
-/* 左 */
-.arrow-left {
-  position: relative
-}
-.arrow-left:before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #fefefe;
-  border-left: 2px solid #fefefe;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-30%, -50%)rotate(-45deg);
-}
-/* 右 */
-.arrow-right {
-  position: relative
-}
-.arrow-right:before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #fefefe;
-  border-left: 2px solid #fefefe;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-70%, -50%)rotate(135deg);
-}
-@media screen and (max-width: 600px) {
-  .arrow-btn {
-    width: 30px;
-    height: 30px;
-  }
-}
-/*********** ページネーション ***********/
-.pagination {
-  width: 150px;
-  margin: 5% auto 0;
-  display: flex;
-  justify-content: space-around;
-}
-.pagination-circle {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #333;
-  border-radius: 50%;
-  background-color: rgba(83, 97, 223, 0.3);
-}
-/* jsでtargetクラスがついたら背景色を変える */
-.pagination-circle.target {
-  background-color: rgba(83, 97, 223, 0.8);
+
+section.awSlider > img{
+  position:absolute;
+  top:30px;
+  z-index:1;
+  transition:all .3s;
+  filter: blur(1.8vw);
+  -webkit-filter: blur(2vw);
+  -moz-filter: blur(2vw); 
+  -o-filter: blur(2vw); 
+  -ms-filter: blur(2vw);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity:.5;
 }
