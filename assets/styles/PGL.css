@@ -27,8 +27,21 @@ text-align: center;
   display: inline;
  }
 
-	header{ top:0; z-index:100; }
-	#slide{ margin:0 auto; }
-	.swiper-container{ witdh:100%; }
-	.swiper-slide-next,.swiper-slide-prev{ opacity: 0.2; }
+header{ 
+	top:0; z-index:100; 
+}
+main{
+	width="50%"
+	height="50%"
+}
+
+#slide{ 
+	margin:0 auto;
+}
+.swiper-container{
+	witdh:100%; 
+}
+.swiper-slide-next,.swiper-slide-prev{ 
+	opacity: 0.5; 
+}
 	
