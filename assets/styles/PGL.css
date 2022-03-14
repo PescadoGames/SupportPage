@@ -12,6 +12,21 @@ body {
   text-align: center;
 }
 
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border-radius: 0;
+}
+
 li {
 	list-style-type:none;		/*リストマーカー無しにする*/
 }
@@ -33,30 +48,160 @@ text-align: center;
   display: inline;
  }
 
-.GamePlaySlider{
-	width: 90%; height: auto;/* Slickのサイズ */
-	margin: auto; padding: 0px;
-	background-color: silver;
+.carousel {
+  width: 600px;
+  height: calc(600px * 0.5625);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
-.GamePlaySlider img{
-	width: 240px; height: 160px;/* 画像のサイズ */
+.carousel .carousel-area {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
 }
 
-.slick-prev:before,
-.slick-next:before{
-	color: black;
+.carousel .carousel-area .carousel-list {
+  width: 600px;
+  height: calc(600px * 0.5625);
+  margin-right: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-	
-.print-all {
-    margin: 20px auto;
-    padding: 10px;
-    color: #FFF;
-    font-size: 12px;
-    text-align: center;
-    background-color: #666;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    cursor: pointer;
+
+.carousel .carousel-area .carousel-list:nth-child(1) {
+  background-image: url(./img/carousel1.jpg);
+}
+
+.carousel .carousel-area .carousel-list:nth-child(2) {
+  background-image: url(./img/carousel2.jpg);
+}
+
+.carousel .carousel-area .carousel-list:nth-child(3) {
+  background-image: url(./img/carousel3.jpg);
+}
+
+.carousel .carousel-area .carousel-list .carousel-img {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.carousel .arrow-wrap {
+  width: 96%;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel .arrow-wrap .arrow-btn {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(113, 135, 245, 0.8);
+  border-radius: 50%;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.carousel .arrow-wrap .arrow-btn:focus {
+  -webkit-box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
+}
+
+.carousel .arrow-wrap .arrow-btn:hover {
+  background-color: #334fd8;
+  -webkit-box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
+}
+
+.carousel .arrow-wrap .arrow-left {
+  position: relative;
+}
+
+.carousel .arrow-wrap .arrow-left button:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fefefe;
+  border-left: 2px solid #fefefe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-30%, -50%) rotate(-45deg);
+          transform: translate(-30%, -50%) rotate(-45deg);
+}
+
+.carousel .arrow-wrap .arrow-right {
+  position: relative;
+}
+
+.carousel .arrow-wrap .arrow-right button:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fefefe;
+  border-left: 2px solid #fefefe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-70%, -50%) rotate(135deg);
+          transform: translate(-70%, -50%) rotate(135deg);
+}
+
+.carousel .pagination {
+  width: 16%;
+  margin: 5% auto 0;
+  position: absolute;
+  bottom: 3%;
+  left: 42%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.carousel .pagination .pagination-circle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+.carousel .pagination .pagination-circle.target {
+  background-color: rgba(10, 10, 100, 0.8);
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    width: 300px;
+    height: calc(300px * 0.5625);
+  }
+  .carousel .carousel-area .carousel-list {
+    width: 300px;
+    height: calc(300px * 0.5625);
+    margin-right: 0;
+  }
 }
