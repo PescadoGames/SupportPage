@@ -21,6 +21,7 @@ table {
   margin-right: 10%;
 }
 th, td {
+  padding: 5px 15px; /* 上下 左右 */
   border: solid 1px #333; /* 線の種類 太さ 色 */
 }
 
