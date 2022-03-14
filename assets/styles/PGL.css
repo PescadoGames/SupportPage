@@ -7,12 +7,9 @@
 
 body {
   color: #fff;
-  margin: 0;
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
-  min-height: 100vh;
   background-color: 191919;
-  padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
-
+  text-align: center;
 }
 
 li {
@@ -27,21 +24,18 @@ text-align: center;
   display: inline;
  }
 
-header{ 
-	top:0; z-index:100; 
-}
-main{
-	width="50%";
-	height="50%";
+.GamePlaySlider{
+	width: 90%; height: auto;/* Slickのサイズ */
+	margin: auto; padding: 0px;
+	background-color: silver;
 }
 
-#slide{ 
-	margin:0 auto;
+.GamePlaySlider img{
+	width: 240px; height: 160px;/* 画像のサイズ */
 }
-.swiper-container{
-	witdh:100%; 
-}
-.swiper-slide-next,.swiper-slide-prev{ 
-	opacity: 0.5; 
+
+.slick-prev:before,
+.slick-next:before{
+	color: black;
 }
 	
