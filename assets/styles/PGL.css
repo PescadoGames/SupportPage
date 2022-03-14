@@ -48,3 +48,15 @@ text-align: center;
 	color: black;
 }
 	
+.print-all {
+    margin: 20px auto;
+    padding: 10px;
+    color: #FFF;
+    font-size: 12px;
+    text-align: center;
+    background-color: #666;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    cursor: pointer;
+}
