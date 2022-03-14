@@ -28,11 +28,4 @@ text-align: center;
 	#slide{ margin:0 auto; }
 	.swiper-container{ witdh:100%; max-width:650px; }
 	.swiper-slide-next,.swiper-slide-prev{ opacity: 0.5; }
-	.swiper-button-prev::before,.swiper-button-next::before {
-		font-size:32px;
-		color:#fff;
-		font-weight:900;
-	}
-	.swiper-button-prev::before { content: "←"; }
-	.swiper-button-next::before { content: "→"; }
 	
