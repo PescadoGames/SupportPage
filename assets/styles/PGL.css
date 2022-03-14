@@ -28,8 +28,7 @@ text-align: center;
  }
 
 	header{ top:0; z-index:100; }
-	main{ width:1024px; }
 	#slide{ margin:0 auto; }
-	.swiper-container{ witdh:100%; max-width:650px; }
-	.swiper-slide-next,.swiper-slide-prev{ opacity: 0.5; }
+	.swiper-container{ witdh:100%; }
+	.swiper-slide-next,.swiper-slide-prev{ opacity: 0.2; }
 	
