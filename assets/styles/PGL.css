@@ -74,15 +74,15 @@ text-align: center;
 }
 
 .carousel .carousel-area .carousel-list:nth-child(1) {
-  background-image: url(./img/carousel1.jpg);
+  background-image: url(https://www.pescadogames.ml/assets/services/Android1080720.png);
 }
 
 .carousel .carousel-area .carousel-list:nth-child(2) {
-  background-image: url(./img/carousel2.jpg);
+  background-image: url(https://www.pescadogames.ml/assets/services/PuzzleLinker0.png);
 }
 
 .carousel .carousel-area .carousel-list:nth-child(3) {
-  background-image: url(./img/carousel3.jpg);
+  background-image: url(https://www.pescadogames.ml/assets/services/PuzzleLinker1.png);
 }
 
 .carousel .carousel-area .carousel-list .carousel-img {
