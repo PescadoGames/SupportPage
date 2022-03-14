@@ -16,6 +16,13 @@ li {
 	list-style-type:none;		/*リストマーカー無しにする*/
 }
 
+table {
+  border-collapse: collapse;
+}
+th, td {
+  border: solid 1px #333; /* 線の種類 太さ 色 */
+}
+
 .center{
 text-align: center;
 }
