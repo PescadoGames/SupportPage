@@ -98,7 +98,7 @@ text-align: center;
   background-image: url(https://www.pescadogames.ml/assets/services/PuzzleLinker1.png);
 }
 
-.carousel .carousel-area .carousel-list .carousel-img {
+.carousel-img {
   width: 1px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
