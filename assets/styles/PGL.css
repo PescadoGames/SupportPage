@@ -40,6 +40,9 @@ table {
 th, td {
   padding: 5px 15px; /* 上下 左右 */
   border: solid 1px #333; /* 線の種類 太さ 色 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .center{
@@ -49,12 +52,6 @@ text-align: center;
 .inline {
   display: inline;
  }
-
-#centerlogo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .carousel {
   width: 600px;
