@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+  padding-bottom: 90px; /* バナーの後ろに要素が隠れないようにするため */
 }
 
 body {
