@@ -226,6 +226,13 @@ text-align: center;
   background-image: linear-gradient(125deg,#00a56a,#0078a5);
 }
 
+.bannermessage{
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+
 .banner{
   position:absolute;
   bottom:0;
