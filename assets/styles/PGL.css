@@ -217,9 +217,9 @@ text-align: center;
 }
 
 .banner_outline{
-  width="530px"
-  height="130px"
-  position:relative;
+  width:530px;
+  height:130px;
+  position:fixed;
   bottom:0;
   left:50%;
   transform:translateX(-50%);
