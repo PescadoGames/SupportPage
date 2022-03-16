@@ -219,7 +219,7 @@ text-align: center;
 .banner_outline{
   width="530px"
   height="130px"
-  position: fixed;
+  position:relative;
   bottom:0;
   left:50%;
   transform:translateX(-50%);
@@ -227,7 +227,7 @@ text-align: center;
 }
 
 .banner{
-  position: fixed;
+  position:absolute;
   bottom:0;
   left:50%;
   transform:translateX(-50%);
