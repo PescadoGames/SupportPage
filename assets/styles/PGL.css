@@ -11,6 +11,7 @@ body {
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
   background-color: 191919;
   text-align: center;
+  padding-bottom: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
 }
 
 button {
