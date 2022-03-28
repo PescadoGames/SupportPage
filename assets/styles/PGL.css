@@ -224,12 +224,12 @@ text-align: center;
   left:50%;
   transform:translateX(-50%);
   background-image: linear-gradient(125deg,#00a56a,#0078a5);
+  transition-delay: 1s;
   animation-name:fadeUpAnime;
   animation-duration:0.5s;
   animation-fill-mode:forwards;
   opacity:0;
 }
-
 
 @keyframes fadeUpAnime{
   from {
