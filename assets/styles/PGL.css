@@ -224,6 +224,23 @@ text-align: center;
   left:50%;
   transform:translateX(-50%);
   background-image: linear-gradient(125deg,#00a56a,#0078a5);
+  animation-name:fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
 }
 
 .bannermessage{
