@@ -46,9 +46,9 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul {
