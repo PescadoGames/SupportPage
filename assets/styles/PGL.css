@@ -50,6 +50,7 @@ nav {
 }
 
 ul {
+  justify-content: center;
   display: flex;
   list-style: none;
   padding: 0;
