@@ -323,11 +323,15 @@ text-align: center;
     font-size: 35px;
     font-weight: normal;
     text-align: center;
-    color: #fff;
-
+    color: #19ACFA;
+    text-decoration: none;
 }
-
-
+.wrapper .text .heading:hover{
+    text-decoration: underline;
+}
+.wrapper .text .heading:visited{
+    color: #2467F9;
+}
 .wrapper .text .heading2{
     margin:0px 0px 40px 0px;
     font-size: 24px;
