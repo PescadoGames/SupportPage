@@ -67,7 +67,7 @@ a {
   padding: 0 20px;
 }
 
-.headerli {
+li {
 	list-style-type:none;		/*リストマーカー無しにする*/
 }
 
