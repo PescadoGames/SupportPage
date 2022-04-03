@@ -423,7 +423,7 @@ dl::after {
     content: '－';
 }
 .acd-check:checked + .acd-label + .acd-content{
-    height: 50px;
+    height: auto;
     opacity: 1;
     padding: 10px;
     visibility: visible;
