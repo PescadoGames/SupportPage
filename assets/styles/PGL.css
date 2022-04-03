@@ -359,3 +359,32 @@ text-align: center;
     background: #0066DB;
 }
 /* container.end */
+
+/* NewsCSS.Start */
+dl{
+
+  padding:10px;
+  width:100%;
+}
+
+dt{
+  color:#028aff;
+  font-weight:bold;
+  padding:0 10px 0 0;
+  width:120px;
+  float:left;
+  margin-bottom:7px;
+}
+
+dd{
+  color:#fff;
+  margin-bottom:7px;
+
+}
+
+dl::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* NewsCSS.end */
