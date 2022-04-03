@@ -388,3 +388,43 @@ dl::after {
     clear: both;
 }
 /* NewsCSS.end */
+
+.acd-check{
+    display: none;
+}
+.acd-label{
+    background: #0068b7;
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    padding: 10px;
+    position: relative;
+}
+.acd-label:after{
+    background: #00479d;
+    box-sizing: border-box;
+    content: '＋';
+    display: block;
+    font-family: "Noto Sans JP";
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+.acd-content{
+    display: block;
+    height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    transition: 1s;
+    visibility: hidden;
+}
+.acd-check:checked + .acd-label:after{
+    content: '－';
+}
+.acd-check:checked + .acd-label + .acd-content{
+    height: 50px;
+    opacity: 1;
+    padding: 10px;
+    visibility: visible;
+}
