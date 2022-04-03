@@ -7,13 +7,13 @@
 }
 
 html,body {
+  height: 100%;/*高さを100%にして描画エリアをとる*/
   color: #fff;
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
   background-color: 191919;
   text-align: center;
   padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
   padding-bottom: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
-  height: 100%;/*高さを100%にして描画エリアをとる*/
 }
 
 #particles-js{ 
