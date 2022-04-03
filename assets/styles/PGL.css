@@ -431,49 +431,12 @@ dl::after {
 
 /* Tab.start */
 
-/*ベース*/
-section.typeC .tabLabel {	/*タブ*/
-	margin-bottom: -1px;
-	padding: 5px 10px ;
-	display: block;
-	color: #444;
-	background: rgba(0,137,167,.3);
-	cursor: pointer;
-	transition: .3s;
-}
-section.typeC .tabLabel::before {
-	margin-right: .5em;
-	font-weight: 700;
-	font-family: 'Font Awesome 5 Free';
-	content: "\f105";
-}
-section.typeC input {		/* ラジオボタン非表示 */
-	display: none;
-}
-section.typeC .content {		/*本文*/
-	height: 0;
-	padding: 0 15px;
-	overflow: hidden;
-	opacity: 0;
-	transition: .3s;
-}
-/*アクティブ設定*/
-section.typeC input:checked + .tabLabel {
-	color:#fff;
-	background: rgba(0,137,167,.7);
-}
-section.typeC input:checked + .tabLabel::before {
-	margin-right: .5em;
-	font-weight: 700;
-	font-family: 'Font Awesome 5 Free';
-	content: "\f107";
-}
-section.typeC input:checked + .tabLabel + .content {
-	height: auto;
-	margin-bottom: -1px;
-	padding: 15px;
-	overflow: auto;
-	border: 1px solid LightGray;
-	opacity: 1;
-}
+.tab_wrap{width:470px; margin:80px auto;}
+.tab_area{font-size:0; padding:0 55px;}
+.tab_area label{width:110px; display:inline-block; padding:14px 0 12px; color:#fff; background:#90c9cc; text-align:center; font-size:13px; cursor:pointer; transition:ease 0.2s opacity; border-top-left-radius:10px; border-top-right-radius:10px; vertical-align:bottom; transition:ease 0.2s; margin:10px 5px 0;}
+.tab_area label:hover{opacity:0.5;}
+.tab_panel{width:100%; padding:80px 0; opacity:0; display:none;}
+.tab_panel p{font-size:14px; letter-spacing:1px; text-align:center;}
+.panel_area{background:#ffffff; border-bottom-right-radius:10px; border-bottom-left-radius:10px; border-top:8px solid #d7e9ea;}
+
 /* Tab.end */
