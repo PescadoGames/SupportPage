@@ -428,3 +428,52 @@ dl::after {
     padding: 10px;
     visibility: visible;
 }
+
+/* Tab.start */
+
+/*ベース*/
+section.typeC .tabLabel {	/*タブ*/
+	margin-bottom: -1px;
+	padding: 5px 10px ;
+	display: block;
+	color: #444;
+	background: rgba(0,137,167,.3);
+	cursor: pointer;
+	transition: .3s;
+}
+section.typeC .tabLabel::before {
+	margin-right: .5em;
+	font-weight: 700;
+	font-family: 'Font Awesome 5 Free';
+	content: "\f105";
+}
+section.typeC input {		/* ラジオボタン非表示 */
+	display: none;
+}
+section.typeC .content {		/*本文*/
+	height: 0;
+	padding: 0 15px;
+	overflow: hidden;
+	opacity: 0;
+	transition: .3s;
+}
+/*アクティブ設定*/
+section.typeC input:checked + .tabLabel {
+	color:#fff;
+	background: rgba(0,137,167,.7);
+}
+section.typeC input:checked + .tabLabel::before {
+	margin-right: .5em;
+	font-weight: 700;
+	font-family: 'Font Awesome 5 Free';
+	content: "\f107";
+}
+section.typeC input:checked + .tabLabel + .content {
+	height: auto;
+	margin-bottom: -1px;
+	padding: 15px;
+	overflow: auto;
+	border: 1px solid LightGray;
+	opacity: 1;
+}
+/* Tab.end */
