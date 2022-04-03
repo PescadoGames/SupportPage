@@ -438,13 +438,13 @@ dl::after {
 }
 .tab li a{
 	display: block;
-	background:#ddd;
+	background:#202020;
 	margin:0 2px;
 	padding:10px 20px;
 }
 /*liにactiveクラスがついた時の形状*/
 .tab li.active a{
-	background:#fff;
+	background:#252525;
 }
 
 
