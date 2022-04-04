@@ -373,6 +373,8 @@ text-align: center;
     width:100%;
     opacity: 0;
     animation-name: WrapperAnim;
+    animation-duration: 2s;
+    animation-direction: forward;
 }
 @keyframes WrapperAnim{
 	from {
