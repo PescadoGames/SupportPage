@@ -17,19 +17,6 @@ body {
   text-align: center;
   padding-top: 52px; /* ヘッダーの後ろに要素が隠れないようにするため */
   height: 100%;/*高さを100%にして描画エリアをとる*/
-  opacity: 0;
-  animation-name: bodyAnim;/*ふわっと表示させるためのアニメーション*/
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes bodyAnim{
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
 }
 
 #particles-js{ 
@@ -385,7 +372,6 @@ text-align: center;
 .wrapper{
     width:100%;
     opacity: 0;
-    transition-delay: 2s;
     animation-name: WrapperAnim;
 }
 @keyframes WrapperAnim{
