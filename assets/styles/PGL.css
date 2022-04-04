@@ -21,8 +21,6 @@ body {
   animation-name: bodyAnim;/*ふわっと表示させるためのアニメーション*/
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  transition-delay: 2s;
-  animation-name: WrapperAnim;
 }
 
 @keyframes bodyAnim{
@@ -387,6 +385,8 @@ text-align: center;
 .wrapper{
     width:100%;
     opacity: 0;
+    transition-delay: 2s;
+    animation-name: WrapperAnim;
 }
 @keyframes WrapperAnim{
 	from {
