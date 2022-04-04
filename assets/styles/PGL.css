@@ -371,7 +371,17 @@ text-align: center;
 /* container.start */
 .wrapper{
     width:100%;
-
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 .wrapper .container{
     max-width:1000px;
