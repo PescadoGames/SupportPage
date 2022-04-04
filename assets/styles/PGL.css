@@ -372,7 +372,6 @@ text-align: center;
 .wrapper{
     width:100%;
     opacity: 0;
-    animation-delay: 2s;
     animation-name: WrapperAnim;/*ふわっと表示させるためのアニメーション*/
     animation-duration: 2s;
     animation-fill-mode: forwards;
