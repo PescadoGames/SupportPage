@@ -21,7 +21,7 @@ body {
   animation-name: bodyAnim;/*ふわっと表示させるためのアニメーション*/
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  animation-delay: 2s;
+  transition-delay: 2s;
   animation-name: WrapperAnim;
 }
 
