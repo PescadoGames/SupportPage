@@ -12,6 +12,7 @@ html {
 
 body {
   color: #fff;
+  background-color:#191919;/*背景色*/
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
   text-align: center;
   padding-top: 52px; /* ヘッダーの後ろに要素が隠れないようにするため */
@@ -23,7 +24,7 @@ body {
 	z-index:-1;/*描画を一番下に*/
 	width: 100%;
 	height: 100%;
-	background-color:#070A31;/*背景色*/
+	background-color:#191919;/*背景色*/
 }
 
 #wrapper{
