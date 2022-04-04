@@ -386,6 +386,7 @@ text-align: center;
 /* container.start */
 .wrapper{
     width:100%;
+    opacity: 0;
 }
 @keyframes WrapperAnim{
 	from {
