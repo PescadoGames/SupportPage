@@ -116,7 +116,7 @@ button {
 
 
 header {
-  height: 50px;
+  height: 55px;
   width: 100%;
   padding: 0px 15px;
   background-color:#191919;
@@ -151,7 +151,7 @@ a {
   color: #ffffff;
   text-decoration: none;
   display: block;
-  line-height: 50px;
+  line-height: 55px;
   padding: 0 20px;
 }
 
