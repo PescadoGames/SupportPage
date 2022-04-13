@@ -116,11 +116,13 @@ button {
 
 
 header {
-  height: 45px;
+  height: 65px;
   width: 100%;
   padding: 0px 15px;
   background-color:#191919;
-  border-bottom: 7px solid linear-gradient(125deg,#00a56a,#0078a5);
+  border-bottom: 5px solid;
+  border-image: linear-gradient(125deg,#00a56a,#0078a5);
+  border-image-slice: 1;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -149,7 +151,7 @@ a {
   color: #ffffff;
   text-decoration: none;
   display: block;
-  line-height: 45px;
+  line-height: 65px;
   padding: 0 20px;
 }
 
