@@ -130,10 +130,7 @@ header {
 }
 
 .logo {
-  font-size: 25px;
-  border: 5px #0078a5;
-  width: 100%;
-  height: 100%;
+  font-size: 10px;
 }
 
 nav {
