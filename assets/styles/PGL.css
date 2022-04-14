@@ -590,10 +590,7 @@ dl::after {
 	display: flex;
 	justify-content:center;
 	align-items:center;
-	background:#00a56a;
-	border: 5px solid;
-  	border-image: linear-gradient(125deg,#0078a5,#00a56a);
-  	border-image-slice: 1;
+	background-image: linear-gradient(125deg,#0078a5,#00a56a);
 	border-radius: 60px;
 	width: 60px;
 	height: 60px;
