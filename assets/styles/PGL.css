@@ -130,8 +130,11 @@ header {
 }
 
 .logo {
-  font-size: 10px;
-  vertical-align:  middle;
+  justify-content: center;
+  display: flex;
+  border: 5px solid;
+  border-image: linear-gradient(125deg,#0078a5,#00a56a);
+  border-image-slice: 1;
 }
 
 nav {
