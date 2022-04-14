@@ -131,6 +131,7 @@ header {
 
 .logo {
   font-size: 10px;
+  vertical-align: center;
 }
 
 nav {
