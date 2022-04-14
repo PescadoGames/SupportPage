@@ -541,7 +541,7 @@ dl::after {
 	margin:0 2px;
 	padding:10px 20px;
 	border-top: 5px solid;
-  	border-image: linear-gradient(125deg,#0078a5,#00a56a);
+  	border-image: #00a56a;
   	border-image-slice: 1;
 }
 /*liにactiveクラスがついた時の形状*/
