@@ -553,6 +553,10 @@ dl::after {
 	opacity: 0;/*透過0*/
 	background: #252525;
 	padding:50px 20px;
+	border-top: 5px solid;
+	border-bottom: 5px solid;
+  	border-image: linear-gradient(125deg,#00a56a,#0078a5);
+  	border-image-slice: 1;
 }
 
 /*areaにis-activeというクラスがついた時の形状*/
