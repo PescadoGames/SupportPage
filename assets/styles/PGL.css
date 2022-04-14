@@ -540,9 +540,7 @@ dl::after {
 	background:#202020;
 	margin:0 2px;
 	padding:10px 20px;
-	border-top: 5px solid;
-  	border-image: #00a56a;
-  	border-image-slice: 1;
+	border-top: 5px solid #00a56a;
 }
 /*liにactiveクラスがついた時の形状*/
 .tab li.active a{
