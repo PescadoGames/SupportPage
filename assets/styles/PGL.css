@@ -537,10 +537,10 @@ dl::after {
 }
 .tab li a{
 	display: block;
-	background:#202020;
+	background:rgba(20,20,20,0);
 	margin:0 2px;
 	padding:10px 20px;
-	border-top: 5px solid #00a56a;
+	border-border: 5px solid #0078a5;
 }
 /*liにactiveクラスがついた時の形状*/
 .tab li.active a{
