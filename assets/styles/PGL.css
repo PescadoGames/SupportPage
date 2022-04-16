@@ -135,10 +135,12 @@ header.UpMove{
   from {
     opacity: 0;
 	transform: translateY(0);
+	z-index: 10;
   }
   to {
     opacity: 1;
 	transform: translateY(-50px);
+	z-index: 0;
   }
 }
 
@@ -151,10 +153,12 @@ header.DownMove{
   from {
   	opacity: 1;
 	transform: translateY(-50px);
+	z-index: 00;
   }
   to {
-  	opacity: 1;
+  	opacity: 0;
 	transform: translateY(0);
+	z-index: 10;
   }
 }
 
