@@ -15,7 +15,6 @@ body {
   background-color:#191919;/*背景色*/
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
   text-align: center;
-  padding-top: 60px; /* ヘッダーの後ろに要素が隠れないようにするため */
   height: 100%;/*高さを100%にして描画エリアをとる*/
 }
 
@@ -123,9 +122,7 @@ header {
   border-bottom: 5px solid;
   border-image: linear-gradient(125deg,#00a56a,#0078a5);
   border-image-slice: 1;
-  position: fixed;
   top: 0;
-  z-index: 10;
   display: flex;
 }
 
