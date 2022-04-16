@@ -126,6 +126,38 @@ header {
   display: flex;
 }
 
+/*　上に上がる動き　*/
+
+header.UpMove{
+	animation: HeaderUpAnime 0.5s forwards;
+}
+@keyframes HeaderUpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(-50px);
+  }
+}
+
+/*　下に下がる動き　*/
+
+header.DownMove{
+	animation: HeaderDownAnime 0.5s forwards;
+}
+@keyframes HeaderDownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(-50px);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+}
+
 .logo {
   justify-content: center;
   display: flex;
