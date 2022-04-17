@@ -132,6 +132,7 @@ header {
 header.UpMove{
 	animation: HeaderUpAnime 0s forwards;
 	position: none;
+	margin-bottom: 90px;
 }
 @keyframes HeaderUpAnime{
   100% {
@@ -145,6 +146,7 @@ header.UpMove{
 header.DownMove{
 	animation: HeaderDownAnime 0.5s forwards;
 	position: fixed;
+	margin-bottom: 0px;
 }
 @keyframes HeaderDownAnime{
   from {
