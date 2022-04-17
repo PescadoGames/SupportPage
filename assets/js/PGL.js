@@ -36,12 +36,12 @@ $('#page-top').click(function () {
 function HeaderAnime() {
 	var scroll = $(window).scrollTop();
 	if (scroll >= 100){//上から200pxスクロールしたら
-		$('#Header').removeClass('UpMove');//headerについているUpMoveというクラス名を除く
-		$('#Header').addClass('DownMove');//headerについているDownMoveというクラス名を付与
+		$('header').removeClass('DownMove');//#page-topについているDownMoveというクラス名を除く
+		$('header').addClass('UpMove');//#page-topについているUpMoveというクラス名を付与
 	}else{
-		if($('header').hasClass('DownMove')){//すでにheaderにDownMoveというクラス名がついていたら
-			$('#Header').removeClass('DownMove');//DownMoveというクラス名を除き
-			$('#Header').addClass('UpMove');//UpMoveというクラス名をheaderに付与
+		if($('header').hasClass('UpMove')){//すでに#page-topにUpMoveというクラス名がついていたら
+			$('header').removeClass('UpMove');//UpMoveというクラス名を除き
+			$('header').addClass('DownMove');//DownMoveというクラス名を#page-topに付与
 		}
 	}
 }
