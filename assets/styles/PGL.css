@@ -126,44 +126,6 @@ header {
   z-index: 0;
 }
 
-#Header {
-	z-index: 10;
-	top: 0;
-	display: flex;
-}
-
-/*　上に上がる動き　*/
-
-#header.UpMove{
-	animation: HeaderUpAnime 0.5s forwards;
-}
-@keyframes HeaderUpAnime{
-  from {
-    opacity: 1;
-	transform: translateY(-50px);
-  }
-  to {
-    opacity: 0;
-	transform: translateY(0);
-  }
-}
-
-/*　下に下がる動き　*/
-
-#header.DownMove{
-	animation: HeaderDownAnime 0.5s forwards;
-}
-@keyframes HeaderDownAnime{
-  from {
-  	opacity: 0;
-	transform: translateY(0);
-  }
-  to {
-  	opacity: 1;
-	transform: translateY(-50px);
-  }
-}
-
 .logo {
   justify-content: center;
   display: flex;
@@ -206,6 +168,46 @@ th, td {
   padding: 5px 15px; /* 上下 左右 */
   border: solid 1px #333; /* 線の種類 太さ 色 */
 }
+
+
+#Header {
+	z-index: 10;
+	top: 0;
+	display: flex;
+}
+
+/*　上に上がる動き　*/
+
+#header.UpMove{
+	animation: HeaderUpAnime 0.5s forwards;
+}
+@keyframes HeaderUpAnime{
+  from {
+    opacity: 1;
+	transform: translateY(-50px);
+  }
+  to {
+    opacity: 0;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#header.DownMove{
+	animation: HeaderDownAnime 0.5s forwards;
+}
+@keyframes HeaderDownAnime{
+  from {
+  	opacity: 0;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(-50px);
+  }
+}
+
 
 .header {
 	height: 10%;
