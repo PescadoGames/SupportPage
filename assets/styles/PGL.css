@@ -137,11 +137,11 @@ header.UpMove{
 @keyframes HeaderUpAnime{
   from {
     opacity: 1;
-	transform: translateY(-50px);
+	transform: translateY(0);
   }
   to {
   	opacity: 1;
-	transform: translateY(-50px);
+	transform: translateY(0);
   }
 }
 
