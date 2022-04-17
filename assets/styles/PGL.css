@@ -122,7 +122,6 @@ header {
   border-bottom: 5px solid;
   border-image: linear-gradient(125deg,#00a56a,#0078a5);
   border-image-slice: 1;
-  z-index: 10;
   top: 0;
   display: flex;
 }
