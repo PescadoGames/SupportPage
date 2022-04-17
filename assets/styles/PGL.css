@@ -124,6 +124,7 @@ header {
   border-image-slice: 1;
   top: 0;
   display: flex;
+  margin-bottom: 90px;
 }
 
 /*　上に上がる動き　*/
