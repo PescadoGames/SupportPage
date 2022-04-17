@@ -123,46 +123,44 @@ header {
   border-image: linear-gradient(125deg,#00a56a,#0078a5);
   border-image-slice: 1;
   top: 0;
-  display: flex;
+  z-index: 0;
+}
+
+#Header {
+	z-index: 10;
+	top: 0;
+	display: flex;
 }
 
 /*　上に上がる動き　*/
 
-header.UpMove{
+#header.UpMove{
 	animation: HeaderUpAnime 0.5s forwards;
 }
 @keyframes HeaderUpAnime{
   from {
     opacity: 1;
 	transform: translateY(-50px);
-	z-index: 0;
-	display: none;
   }
   to {
     opacity: 0;
 	transform: translateY(0);
-	z-index: 10;
-	display: flex;
   }
 }
 
 /*　下に下がる動き　*/
 
-header.DownMove{
+#header.DownMove{
 	animation: HeaderDownAnime 0.5s forwards;
 }
 @keyframes HeaderDownAnime{
   from {
   	opacity: 0;
 	transform: translateY(0);
-	z-index: 10;
-	display: flex;
   }
   to {
   	opacity: 1;
 	transform: translateY(-50px);
-	z-index: 0;
-	display: none;
   }
 }
 
