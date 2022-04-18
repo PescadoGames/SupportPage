@@ -34,6 +34,36 @@ body {
 	height: 100%;
 }
 
+body.LightAnim{
+	animation: HeaderUpAnime 0s forwards;
+}
+@keyframes HeaderUpAnime{
+  from {
+    opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+body.DarkAnim{
+	animation: HeaderDownAnime 0.5s forwards;
+}
+@keyframes HeaderDownAnime{
+  from {
+  	opacity: 0;
+	transform: translateY(-50px);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+}
+
 /*アコーディオン全体*/
 .accordion-area{
     list-style: none;
