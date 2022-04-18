@@ -11,8 +11,8 @@ html {
 }
 
 body {
-  color: #fff;
-  background-color:#191919;/*背景色*/
+  color: #101010;
+  background-color:#fff;/*背景色*/
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
   text-align: center;
   height: 100%;/*高さを100%にして描画エリアをとる*/
