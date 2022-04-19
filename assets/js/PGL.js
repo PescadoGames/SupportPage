@@ -20,6 +20,7 @@ $(window).scroll(function () {
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load', function () {
 	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+	BodyDarkLightAnim();
 });
 
 
@@ -31,3 +32,15 @@ $('#page-top').click(function () {
 	//linear、swing、jswing、easeInQuad、easeOutQuad、easeInOutQuad、easeInCubic、easeOutCubic、easeInOutCubic、easeInQuart、easeOutQuart、easeInOutQuart、easeInQuint、easeOutQuint、easeInOutQuint、easeInSine、easeOutSine、easeInOutSine、easeInExpo、easeOutExpo、easeInOutExpo、easeInCirc、easeOutCirc、easeInOutCirc、easeInElastic、easeOutElastic、easeInOutElastic、easeInBack、easeOutBack、easeInOutBack、easeInBounce、easeOutBounce、easeInOutBounceなどから選択可能
     return false;//リンク自体の無効化
 });
+
+function BodyDarkLightAnim() {
+    if (location.search == '?Dark') {
+    // ダークモード
+    document.body.classList.remove("light-theme");
+    document.body.classList.add("dark-theme");
+  } else {
+    // ライトモード
+    document.body.classList.remove("dark-theme");
+    document.body.classList.add("light-theme");
+  }
+}
