@@ -28,6 +28,9 @@ body {
     background-color: #191919;
     color: #fff;
   }
+  a {
+    color: #fff;
+  }
 }
 
 #particles-js{ 
@@ -163,6 +166,7 @@ ul {
 }
 
 a {
+  color: 333333;
   text-decoration: none;
   display: block;
   line-height: 50px;
