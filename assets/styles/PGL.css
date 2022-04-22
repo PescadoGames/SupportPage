@@ -11,8 +11,8 @@ html {
 }
 
 body {
-  color: #fff;
-  background-color:#191919;/*背景色*/
+  color: #333333;
+  background-color:#fff;/*背景色*/
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
   text-align: center;
   height: 100%;/*高さを100%にして描画エリアをとる*/
@@ -20,23 +20,14 @@ body {
   overflow: auto;
 }
 
-::-webkit-scrollbar-track {
-  background: #ffe6ea;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1bb4d3), to(#1bd8d3));
-  background: linear-gradient(to bottom, #1bb4d3 50%, #1bd8d3);
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-corner {
-	background: #191919;
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+  body {
+    background-color: #191919;
+    color: #fff;
+  }
 }
 
 #particles-js{ 
@@ -172,7 +163,6 @@ ul {
 }
 
 a {
-  color: #ffffff;
   text-decoration: none;
   display: block;
   line-height: 50px;
