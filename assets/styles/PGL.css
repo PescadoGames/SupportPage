@@ -17,6 +17,7 @@ body {
   text-align: center;
   height: 100%;/*高さを100%にして描画エリアをとる*/
   padding-top: 90px;
+  overflow: auto;
 }
 
 ::-webkit-scrollbar-track {
@@ -29,7 +30,8 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ff8095;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1bb4d3), to(#1bd8d3));
+  background: linear-gradient(to bottom, #1bb4d3 50%, #1bd8d3);
   border-radius: 5px;
 }
 
