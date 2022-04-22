@@ -190,162 +190,84 @@ text-align: center;
     justify-content: center;
 }
 
-.carousel {
-  width: 600px;
-  height: calc(600px * 0.5625);
-  margin-left: 5%;
-  position: relative;
-  overflow: hidden;
-  z-index: -1;
+/*==================================================
+スライダーのためのcss始まり
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+    margin:0 auto;
 }
 
-.carousel .carousel-area {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
+.slider img {
+    width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+    height:auto;
 }
 
-.carousel .carousel-area .carousel-list {
-  width: 600px;
-  height: calc(600px * 0.5625);
-  margin-right: 30px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.slider .slick-slide {
+	transform: scale(0.8);/*左右の画像のサイズを80%に*/
+	transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+	opacity: 0.5;/*透過50%*/
 }
 
-.carousel .carousel-area .carousel-list:nth-child(1) {
-  background-image: url(https://www.pescadogames.ml/assets/services/Android1080720.png);
+.slider .slick-slide.slick-center{
+	transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+	opacity: 1;/*透過なし*/
 }
 
-.carousel .carousel-area .carousel-list:nth-child(2) {
-  background-image: url(https://www.pescadogames.ml/assets/services/PuzzleLinker0.png);
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
 }
 
-.carousel .carousel-area .carousel-list:nth-child(3) {
-  background-image: url(https://www.pescadogames.ml/assets/services/PuzzleLinker1.png);
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
 }
 
-.carousel-img {
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  margin: 1%;
-  padding: 0;
-  overflow: hidden;
-  position: absolute;
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
 }
 
-.carousel .arrow-wrap {
-  width: 96%;
-  height: 100%;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+	margin:20px 0 0 0;
 }
 
-.carousel .arrow-wrap .arrow-btn {
-  width: 48px;
-  height: 48px;
-  background-color: rgba(113, 135, 245, 0.8);
-  border-radius: 50%;
-  -webkit-transition: .2s;
-  transition: .2s;
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
 }
 
-.carousel .arrow-wrap .arrow-btn:focus {
-  -webkit-box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
-          box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
 }
 
-.carousel .arrow-wrap .arrow-btn:hover {
-  background-color: #334fd8;
-  -webkit-box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
-          box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
 }
-
-.carousel .arrow-wrap .arrow-left {
-  position: relative;
-}
-
-.carousel .arrow-wrap .arrow-left button:before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #fefefe;
-  border-left: 2px solid #fefefe;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-30%, -50%) rotate(-45deg);
-          transform: translate(-30%, -50%) rotate(-45deg);
-}
-
-.carousel .arrow-wrap .arrow-right {
-  position: relative;
-}
-
-.carousel .arrow-wrap .arrow-right button:before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #fefefe;
-  border-left: 2px solid #fefefe;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-70%, -50%) rotate(135deg);
-          transform: translate(-70%, -50%) rotate(135deg);
-}
-
-.carousel .pagination {
-  width: 16%;
-  margin: 5% auto 0;
-  position: absolute;
-  bottom: 3%;
-  left: 42%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.carousel .pagination .pagination-circle {
-  width: 10px;
-  height: 10px;
-  border: 1px solid #333;
-  border-radius: 50%;
-  background-color: rgba(10, 10, 10, 0.5);
-}
-
-.carousel .pagination .pagination-circle.target {
-  background-color: rgba(10, 10, 100, 0.8);
-}
-
-@media screen and (max-width: 600px) {
-  .carousel {
-    width: 300px;
-    height: calc(300px * 0.5625);
-  }
-  .carousel .carousel-area .carousel-list {
-    width: 300px;
-    height: calc(300px * 0.5625);
-    margin-right: 0;
-  }
-}
+/*==================================================
+スライダーのためのcss終わり
+===================================*/
 
 .banner_outline{
   width:530px;
