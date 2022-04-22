@@ -24,12 +24,13 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;                // スクロールバー全体の幅
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 5px;                       // スクロールバーの丸み
-  box-shadow: inset 0 0 10px 10px #E1E0E0;  // スクロールバーの色
+  background: #ff8095;
+  border-radius: 5px;
 }
 
 #particles-js{ 
