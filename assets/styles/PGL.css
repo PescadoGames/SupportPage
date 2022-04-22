@@ -20,7 +20,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow:0 0 5px #ff99aa inset ;
+  background: #ffe6ea;
 }
 
 ::-webkit-scrollbar {
