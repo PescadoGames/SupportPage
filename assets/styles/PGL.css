@@ -655,6 +655,5 @@ dl::after {
 
 .seihintab {
 	float: right;
-	position: fixed;
-	top: 0;
+	top: 10;
 }
