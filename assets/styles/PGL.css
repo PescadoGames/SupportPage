@@ -26,6 +26,8 @@ a {
   display: block;
   line-height: 50px;
   padding: 0 20px;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 #particles-js{ 
