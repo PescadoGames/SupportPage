@@ -591,14 +591,16 @@ dl::after {
 /* Slider.start */
 /* external css: flickity.css */
 .gallery {
-  background: #EEE;
 }
  
 .gallery-cell {
-  width: 66%;
-  height: 66%;
+  width: 100%;
+  height: 100%;
   margin-right: 10px;
   background: #8C8;
   counter-increment: gallery-cell;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Slider.end */
