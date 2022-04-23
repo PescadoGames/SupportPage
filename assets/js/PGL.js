@@ -30,3 +30,18 @@ $('#page-top a').click(function () {
     }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
     return false;//リンク自体の無効化
 });
+
+$(document).ready(function() {
+    var progression = 0,
+    progress = setInterval(function() 
+    {
+        $('#progress .progress-text').text(progression + '%');
+        $('#progress .progress-bar').css({'width':progression+'%'});
+        if(progression == 100) {
+            clearInterval(progress);
+            alert('done');
+        } else
+            progression += 10;
+
+    }, 1000);
+});
