@@ -596,7 +596,7 @@ dl::after {
  
 .gallery-cell {
   width: 66%;
-  height: 200px;
+  height: 66%;
   margin-right: 10px;
   background: #8C8;
   counter-increment: gallery-cell;
@@ -607,7 +607,7 @@ dl::after {
   display: block;
   text-align: center;
   content: counter(gallery-cell);
-  line-height: 200px;
+  line-height: 66%;
   font-size: 80px;
   color: white;
 }
