@@ -591,8 +591,8 @@ dl::after {
 /* Slider.start */
 /* external css: flickity.css */
 .gallery {
-  width: 50%;
-  height: 50%;
+  width: 960px;
+  height: 540px;
 }
  
 .gallery-cell {
