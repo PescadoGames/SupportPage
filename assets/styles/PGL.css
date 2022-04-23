@@ -581,7 +581,6 @@ dl::after {
 	margin: 0 0 0 auto;
 	top: 10;
 	z-index:10;
-	position: fixed;
 }
 
 /* SeihinZyouhouTab.end */
