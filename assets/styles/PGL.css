@@ -17,7 +17,7 @@ body {
   text-align: center;
   height: 100%;/*高さを100%にして描画エリアをとる*/
   padding-top: 90px;
-  overflow: auto;
+  padding-bottom: 90px;
 }
 
 a {
