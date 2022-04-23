@@ -601,14 +601,4 @@ dl::after {
   background: #8C8;
   counter-increment: gallery-cell;
 }
- 
-/* cell number */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 66%;
-  font-size: 80px;
-  color: white;
-}
 /* Slider.end */
