@@ -28,19 +28,6 @@ a {
   padding: 0 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-  }
-  body {
-    background-color: #191919;
-    color: #fff;
-  }
-  a {
-    color: #fff;
-  }
-}
-
 #particles-js{ 
 	position:fixed;/*描画固定*/
 	z-index:-1;/*描画を一番下に*/
