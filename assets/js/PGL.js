@@ -39,7 +39,6 @@ $(document).ready(function() {
         $('#progress .progress-bar').css({'width':progression+'%'});
         if(progression == 100) {
             clearInterval(progress);
-            alert('done');
         } else
             progression += 10;
 
