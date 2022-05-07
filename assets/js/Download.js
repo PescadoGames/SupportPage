@@ -6,6 +6,7 @@ function DownloadURLChecker() {
   } else {
     $("#ThankYouDownloadMessage").text("<h2>このファイルはありません<br>URLが間違っていないかもう一度お確かめください</h2>");
   }
+}
 
 $(window).on('load', function () {
     DownloadURLChecker();
