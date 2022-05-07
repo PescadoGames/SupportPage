@@ -275,8 +275,8 @@ text-align: center;
 
 /* ボタンのcss始 */
 .heading3{
-    margin:0px 0px 30px 0px;
-    font-size: 20px;
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
     font-weight: normal;
     text-align: center;
     border: 0;
@@ -285,7 +285,7 @@ text-align: center;
     margin: 20px auto;
     text-align: center;
     border: 2px solid #0066DB;
-    padding: 14px 40px;
+    padding: 10px 40px;
     outline: none;
     color: white;
     border-radius: 24px;
