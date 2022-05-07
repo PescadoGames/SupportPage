@@ -616,6 +616,7 @@ dl::after {
 /* Slider.start */
 /* external css: flickity.css */
 .gallery {
+  margin: 20px;
   width: 960px;
   height: 500px;
 }
