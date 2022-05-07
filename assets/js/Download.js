@@ -6,6 +6,8 @@ window.onload = function onLoad() {
   }
   else{
     document.getElementById('ThankYouDownloadMessage').innerHTML = "<h2>このファイルはありません<br>URLを確認してもう一度お試しください</h2>";
+    document.getElementById('DownloadHref').innerHTML = '';
+    document.getElementById('DownloadNotStartMessage').innerHTML = '';
   }
 
 }
