@@ -653,3 +653,9 @@ dl::after {
     right:0;
 }
 /* Progress.end */
+
+/* TitleCSS.Start */
+.Title {
+	margin: 5% auto;
+}
+/* TitleCSS.end */
