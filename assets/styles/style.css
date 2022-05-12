@@ -6,7 +6,7 @@
 }
 
 body {
-  color: #151515;
+  color: #333;
   margin: 0;
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
   min-height: 100vh;
@@ -79,7 +79,7 @@ ul {
 }
 
 a {
-  color: rgba(0,0,0,.87);
+  color: #333;
   text-decoration: none;
   display: block;
   line-height: 60px;
@@ -115,7 +115,7 @@ a {
     left: 15px;
     width: 30px;
     height: 4px;
-    background: #151515;
+    background: #333;
     border-radius: 8px;
     transition: ease 1s;
   }
@@ -246,7 +246,7 @@ dt{
 }
 
 dd{
-  color:#fff;
+  color:#333;
   margin-bottom:7px;
 
 }
@@ -356,7 +356,7 @@ font-size: 30px;
     font-size: 24px;
     font-weight: normal;
     text-align: center;
-    color: #fff;
+    color: #333;
 
 }
 
@@ -366,7 +366,7 @@ font-size: 30px;
     font-size: 24px;
     font-weight: normal;
     text-align: center;
-    color: #fff;
+    color: #333;
     border: 0;
     background: none;
     display: block;
@@ -443,7 +443,7 @@ font-size: 30px;
     font-size: 24px;
     font-weight: normal;
     text-align: center;
-    color: #fff;
+    color: #333;
     border: 0;
     background: none;
     display: block;
@@ -513,7 +513,7 @@ font-family: "Meiryo UI";
     border: 2px solid #0066DB;
     padding: 14px 40px;
     outline: none;
-    color: white;
+    color: #333;
     border-radius: 24px;
     transition: 0.75s;
     cursor: pointer;
@@ -631,7 +631,7 @@ font-family: "Meiryo UI";
 }
 .acd-label{
     background: #0068b7;
-    color: #fff;
+    color: #333;
     display: block;
     margin-bottom: 1px;
     padding: 10px;
