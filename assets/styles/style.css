@@ -79,7 +79,7 @@ ul {
 }
 
 a {
-  color: #151515;
+  color: rgba(0,0,0,.87);
   text-decoration: none;
   display: block;
   line-height: 60px;
@@ -115,7 +115,7 @@ a {
     left: 15px;
     width: 30px;
     height: 4px;
-    background-color: white;
+    background: #151515;
     border-radius: 8px;
     transition: ease 1s;
   }
