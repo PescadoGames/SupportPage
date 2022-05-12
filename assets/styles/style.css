@@ -8,7 +8,7 @@
 body {
   color: #333;
   margin: 0;
-  font-family: 'Roboto', "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP";
   min-height: 100vh;
   background: #fff;
   padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
