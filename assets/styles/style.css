@@ -6,11 +6,11 @@
 }
 
 body {
-  color: #fff;
+  color: #151515;
   margin: 0;
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
   min-height: 100vh;
-  background-image: linear-gradient(125deg,#005078,#00785D);
+  background: #fff;
   padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
 }
 
@@ -679,3 +679,23 @@ font-family: "Meiryo UI";
   background-image: -webkit-linear-gradient(right, #2af598 0%, #009efd 100%);
   background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
 }
+
+/* Huwa.start */
+/* その場で */
+.fadeIn{
+animation-name:fadeInAnime;
+animation-duration:2s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* Huwa.end */
