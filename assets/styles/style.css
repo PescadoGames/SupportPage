@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 * {
-
+  box-sizing: border-box;
 }
 
 body {
@@ -15,6 +15,10 @@ body {
 
 .center{
 text-align: center;
+}
+
+.fadeinbox {
+	float: left;
 }
 
 /* 画面外にいる状態 */
