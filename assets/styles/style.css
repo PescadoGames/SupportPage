@@ -30,19 +30,6 @@ margin-right: auto;
 	padding-bottom : 3em;
 	}
 
-.fadeinsection section {
-	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-	float : left;
-	margin : 2%;
-	padding : 0.5em;
-	text-align : center;
-	box-sizing : border-box;
-	-moz-border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-o-border-radius: 0.5em;
-	-ms-border-radius: 0.5em;	
-}
-
 /* 画面外にいる状態 */
 .fadein {
 	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
@@ -54,9 +41,7 @@ margin-right: auto;
 	-webkit-border-radius: 0.5em;
 	-o-border-radius: 0.5em;
 	-ms-border-radius: 0.5em;	
-	float: left;
 	background-color: #F2F2F2;
-	border-color: #F4F4F4;
 	border-radius: 30px;
 	opacity : 0;
 	transform : translate(0, 50px);
