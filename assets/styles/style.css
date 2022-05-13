@@ -788,3 +788,9 @@ h1{
     color:#fff;
     text-shadow: 0 0 15px #666;
 }
+
+#container{
+  background:#fff;
+  padding:300px 0;
+  text-align: center;
+}
