@@ -21,6 +21,7 @@ margin-right: auto;
 
 /* 画面外にいる状態 */
 .fadein {
+	display: inline-block;
 	margin: 30px;
         padding: 20px;
 	float: left;
