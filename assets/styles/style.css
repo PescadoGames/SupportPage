@@ -18,11 +18,12 @@ text-align: center;
 }
 
 .fadeinbox {
-	float: left;
+	text-align: center;
 }
 
 /* 画面外にいる状態 */
 .fadein {
+	float: left;
 	opacity : 0;
 	transform : translate(0, 50px);
 	transition : all 500ms;
