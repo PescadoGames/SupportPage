@@ -21,16 +21,6 @@ body {
   padding-bottom: 90px;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  line-height: 50px;
-  padding: 0 20px;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
 #particles-js{ 
 	position:fixed;/*描画固定*/
 	z-index:-1;/*描画を一番下に*/
@@ -62,7 +52,7 @@ a {
 	border: 1px solid #ccc;
 }
 
-header {
+.header header {
   height: 50px;
   width: 100%;
   padding: 0px 15px;
@@ -84,13 +74,13 @@ header {
   border-image-slice: 1;
 }
 
-nav {
+.header nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-ul {
+.header ul {
   justify-content: center;
   display: flex;
   list-style: none;
@@ -98,8 +88,18 @@ ul {
   margin: 0;
 }
 
-li {
+.header li {
 	list-style-type:none;		/*リストマーカー無しにする*/
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 table {
@@ -109,10 +109,6 @@ table {
 th, td {
   padding: 5px 15px; /* 上下 左右 */
   border: solid 1px #333; /* 線の種類 太さ 色 */
-}
-
-.header {
-	height: 10%;
 }
 
 .center{
