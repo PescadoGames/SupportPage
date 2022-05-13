@@ -17,10 +17,6 @@ body {
 text-align: center;
 }
 
-.fadeinbox {
-	text-align: center;
-}
-
 /* 画面外にいる状態 */
 .fadein {
 	float: left;
