@@ -24,6 +24,8 @@ text-align: center;
 
 /* 画面外にいる状態 */
 .fadein {
+	margin: 30px;
+        padding: 20px;
 	float: left;
 	background-color: #F2F2F2;
 	border-color: #F4F4F4;
