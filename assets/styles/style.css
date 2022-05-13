@@ -10,7 +10,7 @@ body {
   font-family: "Noto Sans JP";
   min-height: 100vh;
   background: #fff;
-  padding-top: 150px; /* ヘッダーの後ろに要素が隠れないようにするため */
+  padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
 }
 
 .center{
@@ -25,6 +25,7 @@ margin-right: auto;
 	}
 
 .fadeinsection section {
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 	float : left;
 	margin-right : 2%;
 	padding : 2em;
@@ -778,6 +779,7 @@ opacity:0;
 /*要素の配置*/
 position:absolute;
 /*要素を天地中央寄せ*/
+top: 100px;
 left: 50%;
 transform: translateY(-50%) translateX(-50%);
 /*見た目の調整*/
