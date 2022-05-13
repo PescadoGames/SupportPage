@@ -27,11 +27,8 @@ margin-right: auto;
 .fadeinsection section {
 	float : left;
 	width : 32%;
-	margin-right : 2%;
-	padding : 2em;
 	text-align : center;
 	box-sizing : border-box;
-	background-color : #ffffff;
 	-moz-border-radius: 0.5em;
 	-webkit-border-radius: 0.5em;
 	-o-border-radius: 0.5em;
