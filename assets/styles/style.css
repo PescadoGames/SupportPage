@@ -10,7 +10,7 @@ body {
   font-family: "Noto Sans JP";
   min-height: 100vh;
   background: #fff;
-  padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+  padding-top: 150px; /* ヘッダーの後ろに要素が隠れないようにするため */
 }
 
 .center{
