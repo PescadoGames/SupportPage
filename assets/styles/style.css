@@ -18,6 +18,19 @@ body {
 text-align: center;
 }
 
+/* 画面外にいる状態 */
+.fadein {
+	opacity : 0;
+	transform : translate(0, 50px);
+	transition : all 500ms;
+	}
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+
 .kiyaku {
   text-align: center;
   margin: 0 auto;
