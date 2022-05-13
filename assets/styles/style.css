@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   background: #fff;
   padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+  list-style-type:none;
 }
 
 .center {
@@ -827,6 +828,7 @@ text-shadow: 0 0 15px #666;
     }
 
     .slider li {
+        list-style-type:none;
         border-bottom:1px dashed #ccc;
     }
 
