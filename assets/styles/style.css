@@ -10,6 +10,7 @@ body {
   font-family: "Noto Sans JP";
   min-height: 100vh;
   background: #fff;
+  padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
 }
 
 .center{
@@ -95,7 +96,6 @@ margin-right: auto;
   top: 0;
   z-index: 10;
   display: flex;
-  margin-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
 }
 
 .logo {
@@ -777,11 +777,10 @@ opacity:0;
 }
 
 /*見出し設定*/
-h1{
+.h1{
     /*要素の配置*/
     position:absolute;
     /*要素を天地中央寄せ*/
-    top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     /*見た目の調整*/
