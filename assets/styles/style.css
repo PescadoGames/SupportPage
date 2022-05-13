@@ -13,8 +13,16 @@ body {
   padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
 }
 
-.center{
+.center {
 text-align: center;
+}
+
+.right {
+margin-left: auto;
+}
+
+.left {
+	margin-right: auto;
 }
 
 .fadeinsection {
