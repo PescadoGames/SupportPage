@@ -17,6 +17,11 @@ body {
 text-align: center;
 }
 
+.fadeinsection {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* 画面外にいる状態 */
 .fadein {
 	float: left;
