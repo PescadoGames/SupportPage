@@ -20,6 +20,9 @@ text-align: center;
 /* 画面外にいる状態 */
 .fadein {
 	float: left;
+	background-color: #F2F2F2;
+	border-color: #F4F4F4;
+	border-radius: 10px 20px 30px 40px;
 	opacity : 0;
 	transform : translate(0, 50px);
 	transition : all 500ms;
