@@ -703,7 +703,7 @@ font-family: "Meiryo UI";
 /* Huwa.start */
 /* その場で */
 .fadeInTitle{  
-font-size: 3cm;
+font-size: 100%;
 animation-name:fadeInAnime;
 animation-duration:2s;
 animation-fill-mode:forwards;
