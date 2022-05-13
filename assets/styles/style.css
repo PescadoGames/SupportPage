@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  list-style-type:none;
 }
 
 body {
@@ -801,4 +802,39 @@ text-shadow: 0 0 15px #666;
   background:#fff;
   padding:300px 0;
   text-align: center;
+}
+
+/*ニュース1行の周りの余白*/
+.slider a{
+    display: block;
+    background:#fff;
+    padding:20px;
+}
+
+/*日付*/
+.slider span {
+    display:inline-block;
+    font-size:0.8rem;
+    margin-right:10px;
+    color:#777;
+}
+
+/*768px以下の見た目 ※1行のままにしたい場合は不要　*/
+@media screen and (max-width:768px) {
+    .slider {
+        padding:20px;
+        background:#fff;
+    }
+
+    .slider li {
+        border-bottom:1px dashed #ccc;
+    }
+
+    .slider li:last-child {
+        border-bottom:none;
+    }
+    .slider span {
+        display:block;
+		padding-bottom:10px;
+    }
 }
