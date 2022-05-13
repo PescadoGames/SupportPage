@@ -12,7 +12,6 @@ body {
   min-height: 100vh;
   background: #fff;
   padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
-  transform: scale(1.2);
 }
 
 .center{
