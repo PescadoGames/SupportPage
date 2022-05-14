@@ -438,12 +438,8 @@ font-size: 30px;
 
 .wrapper .text .heading2:hover{
     background: #0066DB;
+    color: #fff;
 }
-.wrapper .text .heading2:hover{
-    background: #0066DB;
-}
-
-
 
 .box input{
     border: 0;
@@ -491,6 +487,7 @@ font-size: 30px;
 
 .heading3:hover{
     background: #0066DB;
+    color: #fff;
 }
 
 .heading4{
@@ -513,8 +510,9 @@ font-size: 30px;
     cursor: pointer;
 }
 
-.wrapper .text .heading2:hover{
+.wrapper .text .heading4:hover{
     background: #0066DB;
+    color: #fff;
 }
 
 .copyright{
