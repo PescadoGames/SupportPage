@@ -475,13 +475,20 @@ dl::after {
 }
 .tab li a{
   display: block;
-  background:#ddd;
+  background:#191919;
   margin:0 2px;
   padding:10px 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 /*liにactiveクラスがついた時の形状*/
 .tab li.active a{
-  background:#fff;
+  background:#151515;
 }
 
 
