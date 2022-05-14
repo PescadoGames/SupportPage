@@ -469,22 +469,19 @@ dl::after {
 
 /* Tab.start */
 
-/*tabの形状*/
 .tab{
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .tab li a{
-	display: block;
-	background:rgba(20,20,20,0);
-	margin:0 2px;
-	padding:10px 20px;
-	border-bottom: 5px solid #00a56a;
+  display: block;
+  background:#ddd;
+  margin:0 2px;
+  padding:10px 20px;
 }
 /*liにactiveクラスがついた時の形状*/
 .tab li.active a{
-	background:rgba(20,20,20,0);
+  background:#fff;
 }
 
 
