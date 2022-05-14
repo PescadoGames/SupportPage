@@ -44,6 +44,23 @@ margin-left: auto;
 margin-right: auto;
 }
 
+.nofadein {
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+	margin : 2%;
+	padding : 0.5em;
+	text-align : center;
+	box-sizing : border-box;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-o-border-radius: 0.5em;
+	-ms-border-radius: 0.5em;	
+	background-color: #252525;
+	border-radius: 30px;
+	opacity : 0;
+	transform : translate(0, 50px);
+	transition : all 500ms;
+}
+
 .fadeinsection {
 	overflow : hidden;
 	padding-bottom : 3em;
