@@ -72,6 +72,10 @@ margin-right: auto;
 	transform : translate(0, 0);
 	}
 
+.seihintab center {
+	position: absolute;
+}
+
 /* SeihinZyouhouTab.end */
 
 .nofadein {
