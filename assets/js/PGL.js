@@ -12,12 +12,6 @@ function PageTopAnime() {
 	}
 }
 
-function OnLoadFadeInAnim() {
-	$('.seihintab').each(function(){
-	$(this).addClass('scrollin');
-	}
-}
-
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
 	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
@@ -26,7 +20,7 @@ $(window).scroll(function () {
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load', function () {
 	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
-	OnLoadFadeInAnim();
+	$(.seihintab).addClass('scrollin');
 });
 
 
