@@ -13,7 +13,7 @@ function PageTopAnime() {
 }
 
 function OnLoadFadeInAnim() {
-	$('.sclollin').each(function(){
+	$('.seihintab').each(function(){
 	$(this).addClass('scrollin');
 	}
 }
