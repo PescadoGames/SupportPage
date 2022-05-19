@@ -20,7 +20,7 @@ $(window).scroll(function () {
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load', function () {
 	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
-	$(.seihintab).addClass('scrollin');
+	$('.seihintab').addClass('scrollin');
 });
 
 
