@@ -13,7 +13,7 @@ function PageTopAnime() {
 }
 
 function OnLoadFadeInAnim() {
-	$('.fadein').each(function(){
+	$('.sclollin').each(function(){
 	$(this).addClass('scrollin');
 	}
 }
