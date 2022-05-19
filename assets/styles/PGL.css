@@ -73,7 +73,8 @@ margin-right: auto;
 	}
 
 .seihintab center {
-	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* SeihinZyouhouTab.end */
