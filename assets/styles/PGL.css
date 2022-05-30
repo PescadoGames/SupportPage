@@ -686,19 +686,20 @@ dl::after {
 
 .flickity-button {
   position: absolute;
-  background: hsl(185deg 100% 50% / 75%);
+  background: hsl(185deg 100% 50% / 0%);
   border: none;
   color: #fff;
 }
 
 .flickity-button:hover {
-  background: hsl(185deg 99% 40% / 75%);
+  background: hsl(185deg 100% 50% / 0%);
+  color: #717171;
   cursor: pointer;
 }
 
 .flickity-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #19F;
+  color: #717171;
 }
 
 .flickity-button:active {
