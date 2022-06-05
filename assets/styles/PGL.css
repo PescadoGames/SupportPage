@@ -246,6 +246,10 @@ text-align: center;
 	opacity: 1;/*透過なし*/
 }
 
+.silder li a {
+	color: #D8D8D8
+}
+
 
 /*矢印の設定*/
 
