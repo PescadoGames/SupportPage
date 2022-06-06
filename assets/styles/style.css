@@ -518,7 +518,7 @@ font-size: 30px;
 .copyright{
 
 font-size: 30px;
-font-family: "Meiryo UI";
+font-family: "Roboto";
 
 }
 
@@ -808,7 +808,6 @@ text-shadow: 0 0 15px #666;
 .slider a{
     display: block;
     background:#fff;
-    padding:20px;
 }
 
 /*日付*/
