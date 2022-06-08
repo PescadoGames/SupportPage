@@ -12,7 +12,7 @@ body{
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  color: #343434
+  color: #fff;
 }
 
 .container h1{
@@ -20,7 +20,7 @@ body{
   margin: 0;
   font-weight: 900;
   letter-spacing: 20px;
-  background-image: linear-gradient(0deg,#004a6e,#000000);
+  background-image: linear-gradient(320deg,#00ff18,#0095ff);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   transition: 3s;
