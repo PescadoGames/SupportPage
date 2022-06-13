@@ -88,14 +88,10 @@ window.onload = function(){
   <h1>メールマガジンの申請</h1>
   <h2>メールマガジンを申請しますか？メールマガジンには今月の最新情報やゲームの情報やさらには普通では見られない秘密の内容とかも？ありますので是非!</h2>
   <h3>メールアドレス送信後数分から数日で確認メールが届きます<br>確認メールになんでもいいのでご返信いただければ確認完了となり、確認完了のメールが送信されます<br>もし確認メールに24時間以内にご返信いただけなかった場合は誠に勝手ながら登録を削除させていただきます</h3>
-<section class="fadein">
-<form  method="get" action="https://script.google.com/d/1rW3pymS9JqsRos6qhaELlkktLxrqcE_cyfu0hTgbze5NP-hZnNBLQQv7" accept-charset="UTF-8">
-<div>ユーザー名(半角20文字以内): <input type=text name="NAME" size=20></div>
-<h3>ユーザー名の利用方法:ユーザー名は〇〇様などのために使用させていただきます</h3>
-<div>メールアドレス: <input type="email" name="email"></div>
-<input type="submit" value="  送信  ">
-<input type="reset"  value="  取消  ">
-</form>
+<section class="fadein scrollin">
+<textarea id="textArea" rows="5" cols="25"></textarea>
+<br>
+<button id="postButton">POST</button>
 <h2>送信された情報はプライバシーポリシーにのっとって処理されます<br>また、もしメールマガジンを停止したい場合は<a href="https://www.pescadogames.com/contact.html">こちら</a>にてお問い合わせください<br>すべて手作業なので量によっては手に負えなくなり、誠に勝手ながらメールマガジンを終了させていただく場合があります。</h2>
 <h2>迷惑メールと思う場合は<a href="https://www.pescadogames.com/contact.html">こちら</a>にて言っていただければメールの質を向上させることができる"かも"しれません!</h2>
 </section>  
@@ -112,6 +108,46 @@ window.onload = function(){
 <script type="text/javascript" src="/assets/js/script.js"　defer></script>
 <script type="text/javascript" src="/assets/js/fonts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+  <script>
+    //GAS WebアプリのURL
+    const END_POINT = "https://script.google.com/macros/s1rW3pymS9JqsRos6qhaELlkktLxrqcE_cyfu0hTgbze5NP-hZnNBLQQv7/exec";
+    //読み書きするスプレッドシート（タブ）の番号
+    const SHEET_NO = 1; 
+    document.getElementById("postButton").addEventListener('click', postToGAS, false);
+    let dataObj = {};
+    function postToGAS() {
+      const Content = document.getElementById("textArea").value.trim();
+      console.log(Content);
+      //データがJSONかどうかのチェック
+      try {
+        const checkJSON = JSON.parse(Content);
+        if (checkJSON.length > 0 && Object.keys(checkJSON).length > 0) {
+          console.log("data is OK");
+        } else {
+          throw "data is not array of object";
+        }
+      }
+      catch (e) {
+        alert("error:" + e);
+        return;
+      }
+      //POST送信
+      $.ajax({
+        type: "POST",
+        url: END_POINT,
+        dataType: "json",
+        data: { sheetNo: SHEET_NO, data: Content }
+      })
+        .then(
+          (result) => { // 成功した時の処理
+            console.log(JSON.stringify(result));
+          },
+          (error) => { // 失敗した時の処理
+            alert('Error:' + JSON.stringify(error));
+          }
+        );
+    }
+  </script>
 <script>
   $('#hamburger').on('click', function() {
     $('.icon').toggleClass('close');
