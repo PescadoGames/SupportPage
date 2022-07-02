@@ -15,6 +15,45 @@ body {
   list-style-type:none;
 }
 
+body.appear{
+    background:#fbfbfb;
+}
+
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	color: #333;
+	text-decoration: none;
+    outline: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.heading{
+    font-family: 'Alex Brush', cursive;
+    font-size: 5vw;
+    font-weight: normal;
+    color: #182578;
+    animation-delay: 0.3s;
+}
+
+@media screen and (max-width:960px) {
+.heading{
+    font-size:3.5rem;
+}
+}
+
+#container{
+    overflow-x: hidden;
+}
+
 .center {
 text-align: center;
 }
@@ -100,7 +139,7 @@ margin-right: auto;
   font-weight:lighter;
 }
 
-.header {
+#header {
   background-color: #fff;
   height: 66px;
   width: 100%;
@@ -119,18 +158,18 @@ margin-right: auto;
   font-size: 25px;
 }
 
-.header nav {
+#header nav {
   margin: 0 0 0 auto;
 }
 
-.header ul {
+#header ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.header a {
+#header a {
   color: #333;
   text-decoration: none;
   display: block;
@@ -737,65 +776,7 @@ font-family: "Meiryo UI";
   background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
 }
 
-/*========= 背景動画設定のCSS ===============*/
 
-/*header設定*/
-#header{
-    position: relative;/*h1の中央寄せ配置の起点とするためのrelative*/
-    height: 100vh;/*高さを全画面にあわせる*/
-} 
-
-#video-area{
-    position: fixed;
-    z-index: -1;/*最背面に設定*/
-    top: 0;
-    right:0;
-    left:0;
-    bottom:0;
-    overflow: hidden;
-}
-
-#video {
-    /*天地中央配置*/
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*縦横幅指定*/
-    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
-    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
-    min-height: 100%;
-    min-width: 100%;
-}
-
-/*見出し設定*/
-.h1{
-text-align: center;
-animation-name:fadeInAnime;
-animation-duration:2s;
-animation-fill-mode:forwards;
-opacity:0;
-/*要素の配置*/
-position:absolute;
-/*要素を天地中央寄せ*/
-top: 100px;
-left: 50%;
-transform: translateY(-50%) translateX(-50%);
-/*見た目の調整*/
-color:#fff;
-text-shadow: 0 0 15px #666;
-}
-
-@keyframes fadeInAnime{
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
 
 #container{
   background:#fff;
