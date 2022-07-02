@@ -775,13 +775,6 @@ font-family: "Meiryo UI";
   background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
 }
 
-
-
-#container{
-  text-align: center;
-}
-
-
 /*ニュース1行の周りの余白*/
 .slider a{
     display: block;
