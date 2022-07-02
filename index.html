@@ -18,7 +18,11 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <!--CSSStart-->
     <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/parts.css">
+    <!--CSSEnd-->
     <link rel="canonical" href="https://www.pescadogames.com">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMK183GM24"></script>
@@ -43,26 +47,12 @@ window.onload = function(){
   </head>
 <body>
 	  
-<header id="header">
-<h1 style="font-family: Noto Sans JP; text-align: center;" class="h1">PescadoGamesの目標はただ一つ<br>それは<br>世界のゲーム開発会社になること。</h1>
-<div id="video-area">
-<video id="video" poster="/assets/image/TitleMovie.jpg" webkit-playsinline playsinline muted autoplay loop>
-<!--
-poster：動画ファイルが利用できない環境で代替表示される画像
-webkit-playsinline：iOS 9までのSafari用インライン再生指定
-playsinline：iOS 10以降のSafari用インライン再生指定
-muted：音声をミュートさせる
-autoplay：動画を自動再生させる
-loop：動画をループさせる
-controls：コントロールバーを表示する
--->
-<source src="/assets/movie/TitleMovie.mp4" type="video/mp4" oncontextmenu="return false;">
-<source src="/assets/movie/TitleMovie.ogv" type="video/ogv" oncontextmenu="return false;">
-<source src="/assets/movie/TitleMovie.webm" type="video/webm" oncontextmenu="return false;">
-<p>動画を再生できる環境ではありません。</p>
-</video>
-<!--/video-area--></div>
-</header>
+<div id="splash">
+<div id="splash-logo"><div class="fadeUp"><img src="assets/icons/NewLogo_Transparent_56x56.webp" alt="Logo">PescadoGames</div></div>
+<!--/splash--></div>
+<div class="splashbg1"></div>
+<div class="splashbg2"></div>
+<!---画面遷移用-->
 <div id="container">
   <!-- ヘッダー -->
   <header class="header">
@@ -87,6 +77,7 @@ controls：コントロールバーを表示する
         <li><a href="">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="news.html">NEWS</a></li>
+        <li><a href="/game/">GAMES</a></li>
         <li><a href="service.html">SERVICES</a></li>
         <li><a href="contact.html">CONTACT</a></li>
        </ul>
@@ -99,6 +90,7 @@ controls：コントロールバーを表示する
         <li><a href="">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="news.html">NEWS</a></li>
+        <li><a href="/game/">GAME</a></li>
         <li><a href="service.html">SERVICES</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
