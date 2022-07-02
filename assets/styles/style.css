@@ -841,6 +841,7 @@ text-shadow: 0 0 15px #666;
 /* footer */
 
 #footer{
+    bottom: 0;
     position: relative;
     display: flex;
     justify-content: space-between;
