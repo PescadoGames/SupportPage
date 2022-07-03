@@ -88,15 +88,15 @@ $('#page-top').click(function () {
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
 		if (windowwidth > 768){
 			var responsiveImage = [//PC用の画像
-				{ src: './img/main_01.jpg'},
-				{ src: './img/main_02.jpg'},
-				{ src: './img/main_03.jpg'}
+				{ src: '/assets/services/GENEI.png'},
+				{ src: '/assets/services/PGLScreenImage.png'},
+				{ src: '/assets/services/Android1080720.png'}
 			];
 		} else {
 			var responsiveImage = [//タブレットサイズ（768px）以下用の画像
-				{ src: './img/main_sp01.jpg' },
-				{ src: './img/main_sp02.jpg' },
-				{ src: './img/main_sp03.jpg' }
+				{ src: '/assets/services/GENEI.png' },
+				{ src: '/assets/services/PGLScreenImage.png' },
+				{ src: '/assets/services/Android1080720.png' }
 			];
 		}
 
