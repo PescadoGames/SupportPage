@@ -69,7 +69,11 @@ img{
     top: 25px;
     left:50%;
     transform: translateX(-50%);
-    color:#182578;
+    display: inline-block;
+    background: linear-gradient(135deg, #0ec700 25%, #e0d800 50%, #0066ff 75%, #ff5e1f 100%);
+    background: -webkit-linear-gradient(-45deg, #0ec700 25%, #e0d800 50%, #0066ff 75%, #ff5e1f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #g-nav ul{
