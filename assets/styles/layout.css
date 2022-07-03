@@ -90,10 +90,6 @@ img{
     white-space: nowrap;
 }
 
-#g-nav ul li:last-child{
-     display: none;   
-}
-
 #g-nav ul li a{
     display: block;
     padding:6px 15px;
