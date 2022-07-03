@@ -707,7 +707,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 #footer .footer-r{
     width:70%;
     padding: 40px;
-    background:#182578;
+    background:#0066ff;
     color: #fff;
 }
 
@@ -801,7 +801,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #cccccc;
+    background: #0ec700;
     height: 40vh;
 }
 
@@ -818,7 +818,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 }
 
 #footer #copyright{
-    background:#333333;
+    background:#e0d800;
     color: #ccc;
     text-align: center;
     display: flex;
