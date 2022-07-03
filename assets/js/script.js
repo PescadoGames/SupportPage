@@ -203,6 +203,15 @@ $(window).scroll(function () {
 	ScrollAnime();//機能編 5-1-9スクロール途中でヘッダーが消え、上にスクロールすると復活の関数を呼ぶ
 	moveAnimation();//印象編 4-13 ランダムに現れる（CSS x jQuery）
 	fadeAnime();//印象編 4 最低限おぼえておきたい動きの関数を呼ぶ
+	
+	$('.fadein').each(function(){
+		var elemPos = $(this).offset().top;
+		var scroll = $(window).scrollTop();
+		var windowHeight = $(window).height();
+		if (scroll > elemPos - windowHeight + 200){
+			$(this).addClass('scrollin');
+		}
+	});
 });
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
