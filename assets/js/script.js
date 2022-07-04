@@ -114,6 +114,30 @@ $('#slider').vegas({
 	});
 
 /*===========================================================*/
+/*実践編 8-2 流れるように出現(左から右)（CSS x jQuery）*/
+/*===========================================================*/
+
+function slideAnime() {
+	$('.leftAnime').each(function() {
+		var elemPos = $(this).offset().top-50;
+		var scroll = $(window).scrollTop();
+		var windowHeight = $(window).height ();
+		if (scroll >= elemPos - windowHeight){
+			//左から右へ表示するクラスを付与
+			//テキスト要素を挟む親要素(左側)とテキスト要素を元位置でアニメーションを行う
+			$(this).addclass("slideAnimeLeftRight");
+			//要素を左枠外へ移動し CSSアニメーションで左から元の位置に移動
+			$(this).children(".LeftAnimeInner").addclass("slideAnimeRightLeft");
+			//子要素は親要素のアニメーションに影響されないように逆の指定をし元の位置をキープするアニメーションを行う
+		}else{
+			//左から右へ表示するクラスを削除
+			$(this).removeClass("slideAnimeLeftRight");
+			$(this).children(".leftAnimeInner").removeClass("slideAnimeRightleft");
+		}
+	});
+}
+
+/*===========================================================*/
 /*印象編 4-13 ランダムに現れる（CSS x jQuery）*/
 /*===========================================================*/
 
@@ -199,6 +223,7 @@ $('.fadeUpTrigger').each(function(){ //fadeUpTriggerというクラス名が
 
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
+	slideAnime();/* アニメーション用の関数を呼ぶ*/
 	ScrollTimelineAnime();//機能編 9-1-5 スクロールをするとエリアの高さに合わせて線が伸びる関数を呼ぶ
 	ScrollAnime();//機能編 5-1-9スクロール途中でヘッダーが消え、上にスクロールすると復活の関数を呼ぶ
 	moveAnimation();//印象編 4-13 ランダムに現れる（CSS x jQuery）
@@ -207,6 +232,7 @@ $(window).scroll(function () {
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load',function(){
+	slideAnime();/* アニメーション用の関数を呼ぶ*/
     $("#splash-logo").delay(1200).fadeOut('slow');//ロゴを1.2秒でフェードアウトする記述
 	
     //=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
