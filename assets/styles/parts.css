@@ -60,13 +60,11 @@ body.appear .splashbg1{
 	0% {
 		transform-origin:top;
 		transform:scaleX(1);
-		transform: translateX(0);
 	}
 
 	100% {
 		transform-origin:top;
 		transform:scaleX(0);
-		transform: translateX(3000);
 	}
 }
 
@@ -91,12 +89,10 @@ body.appear .splashbg2{
 	0% {
 		transform-origin:bottom;
 		transform:scaleX(1);
-		transform: translateX(0);
 	}
 	100% {
 		transform-origin:bottom;
 		transform:scaleX(0);
-		transform: translateX(-3000);
 	}
 }
 
