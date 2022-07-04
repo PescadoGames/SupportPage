@@ -121,18 +121,18 @@ function slideAnime() {
 	$('.leftAnime').each(function() {
 		var elemPos = $(this).offset().top-50;
 		var scroll = $(window).scrollTop();
-		var windowHeight = $(window).height ();
+		var windowHeight = $(window).height();
 		if (scroll >= elemPos - windowHeight){
 			//左から右へ表示するクラスを付与
 			//テキスト要素を挟む親要素(左側)とテキスト要素を元位置でアニメーションを行う
-			$(this).addclass("slideAnimeLeftRight");
+			$(this).addClass("slideAnimeLeftRight");
 			//要素を左枠外へ移動し CSSアニメーションで左から元の位置に移動
-			$(this).children(".LeftAnimeInner").addclass("slideAnimeRightLeft");
+			$(this).children(".LeftAnimeInner").addClass("slideAnimeRightLeft ");
 			//子要素は親要素のアニメーションに影響されないように逆の指定をし元の位置をキープするアニメーションを行う
 		}else{
 			//左から右へ表示するクラスを削除
 			$(this).removeClass("slideAnimeLeftRight");
-			$(this).children(".leftAnimeInner").removeClass("slideAnimeRightleft");
+			$(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft ");
 		}
 	});
 }
