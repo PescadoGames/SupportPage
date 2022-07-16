@@ -882,8 +882,13 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
         margin: 0;
     }
     #footer .footer-link{
-        display: none;
+          display:flex;
+		flex-flow: column;
+		ustify-content:space-between;
     }
+    #footer .footer-l .footer-contact{
+	    display: none;
+	}
     
 #footer .footer-r .map-area h2{
     width:100%;
