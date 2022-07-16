@@ -703,8 +703,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     flex-wrap:
     wrap;
     flex-direction: row-reverse;
-    /* background: linear-gradient(45deg, #000000, #d3d3d3); */
-    background: radial-gradient(circle at bottom, #06f, #00316e 50%, #0066ff 75%);
+    background: linear-gradient(45deg, #06f, #d3d3d3);
 }
 
 #footer .footer-r{
@@ -788,8 +787,6 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 
 #footer .footer-l{
     width: 30%;
-    /* background:#333333; */
-    background: linear-gradient(45deg, #00000085, #d3d3d3);
     color: #FFF;
 }
 
