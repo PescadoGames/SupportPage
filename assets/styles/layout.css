@@ -4,13 +4,13 @@
 body{
     background:#182578;
     font-family: 'Noto Serif JP', serif;
-	color: #333;
+    color: #333;
 	font-size:1rem;
-	line-height:1.85;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%; 
-	word-wrap: break-word;
+    line-height:1.85;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    word-wrap: break-word;
 }
 
 body.appear{
@@ -703,14 +703,17 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     flex-wrap:
     wrap;
     flex-direction: row-reverse;
-    background: linear-gradient(45deg, #000000, #d3d3d3);
+    /* background: linear-gradient(45deg, #000000, #d3d3d3); */
+    background: radial-gradient(circle at bottom, #06f, #00316e 50%, #0066ff 75%);
 }
 
 #footer .footer-r{
-    width:70%;
+    width: 70%;
     padding: 40px;
     /* background:#0043a9; */
+    /* background: radial-gradient(circle at bottom, #333, #333 50%, #eee 75%, #333 75%); */
     color: #fff;
+    display: flex;
 }
 
 #footer .footer-r .map-address{
@@ -773,19 +776,11 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 #footer .footer-link{
     font-size: 0.9rem;
     padding: 0 0 0 50px;
-}
-
-#footer .footer-link li{
-     display: inline-block;
+    /* display: flex; */
 }
 
 #footer .footer-link a{
     color: #fff;
-}
-
-#footer .footer-link a::after{
-    content:'/';
-    padding: 0 10px;
 }
 
 #footer .footer-link li:last-child a::after{
@@ -794,8 +789,9 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 }
 
 #footer .footer-l{
-    width:30%;
+    width: 30%;
     /* background:#333333; */
+    background: linear-gradient(45deg, #000000, #d3d3d3);
     color: #FFF;
 }
 
