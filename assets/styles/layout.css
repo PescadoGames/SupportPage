@@ -710,8 +710,6 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 #footer .footer-r{
     width: 70%;
     padding: 40px;
-    /* background:#0043a9; */
-    /* background: radial-gradient(circle at bottom, #333, #333 50%, #eee 75%, #333 75%); */
     color: #fff;
     display: flex;
 }
@@ -791,7 +789,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 #footer .footer-l{
     width: 30%;
     /* background:#333333; */
-    background: linear-gradient(45deg, #000000, #d3d3d3);
+    background: linear-gradient(45deg, #00000085, #d3d3d3);
     color: #FFF;
 }
 
