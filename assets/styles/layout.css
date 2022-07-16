@@ -884,7 +884,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     #footer .footer-link{
           display:flex;
 		flex-flow: column;
-		ustify-content:space-between;
+		justify-content:space-between;
     }
     #footer .footer-l .footer-contact{
 	    display: none;
