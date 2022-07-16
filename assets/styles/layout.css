@@ -703,7 +703,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     flex-wrap:
     wrap;
     flex-direction: row-reverse;
-    background-color: #004be5;
+    background: linear-gradient(45deg, #000000, #d3d3d3);
 }
 
 #footer .footer-r{
