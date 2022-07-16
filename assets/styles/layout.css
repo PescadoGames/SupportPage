@@ -825,6 +825,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     justify-content: center;
     align-items: center;
     height: 20vh;
+    padding: 20px;
 }
 
 #footer #copyright small a{
