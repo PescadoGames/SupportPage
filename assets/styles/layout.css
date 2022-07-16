@@ -700,14 +700,16 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     position: relative;
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap:
+    wrap;
     flex-direction: row-reverse;
+    background: radial-gradient(circle at bottom, #439efb 0, #0f4dfd 50%);
 }
 
 #footer .footer-r{
     width:70%;
     padding: 40px;
-    background:#0043a9;
+    /* background:#0043a9; */
     color: #fff;
 }
 
@@ -793,7 +795,8 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 
 #footer .footer-l{
     width:30%;
-    background:#333333;
+    /* background:#333333; */
+    color: #FFF;
 }
 
 #footer .footer-l .footer-contact{
@@ -801,7 +804,7 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #7aff70;
+    /* background: #7aff70; */
     height: 40vh;
 }
 
@@ -812,19 +815,25 @@ _:-ms-lang(x)::-ms-backdrop, .message-content .message-btn{/*IE11用ハック*/
 }
 
 #footer .footer-l .footer-contact-area a{
-    font-size: 1.3rem;
+    color: #FFF;
+	font-size: 1.3rem;
     padding: 0 0 20px 0;
     display: inline-block;
 }
 
 #footer #copyright{
-    background:#fff94b;
-    color: #333;
+    /* background:#fff94b; */
+    color: #fff;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20vh;
+}
+
+#footer #copyright small a{
+    /* background:#fff94b; */
+    color: #fff;
 }
 
 #footer #page-top{
