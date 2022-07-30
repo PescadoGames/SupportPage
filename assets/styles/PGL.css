@@ -290,7 +290,7 @@ text-align: center;
 .slider .slick-slide {
 	transform: scale(0.8);/*左右の画像のサイズを80%に*/
 	transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
-	opacity: 0.5;/*透過50%*/
+	opacity: 1;/*透過50%*/
 }
 
 .slider .slick-slide.slick-center{
