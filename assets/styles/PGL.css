@@ -186,6 +186,21 @@ margin-right: auto;
 	-ms-transition-delay:400ms;
 	}
 
+.fadein a{
+	color: #23a4ff; /*--オーシャンブルー--*/
+	text-decoration: none;
+}
+
+.fadein a:hover{
+	color: #23ff85; /*-- 文字色をオレンジ色 --*/
+	text-decoration: none;
+}
+
+.fadein a:visited {
+	color: #e78000;
+	text-decoration: none;
+}
+
 /*アコーディオン全体*/
 .accordion-area{
     list-style: none;
