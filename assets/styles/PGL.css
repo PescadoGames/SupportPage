@@ -472,6 +472,7 @@ text-align: center;
     display:block;
     max-width:100%;
     margin:0px auto;
+	height: auto;
 }
 .wrapper .text{
     padding:50px;
