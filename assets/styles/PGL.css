@@ -27,6 +27,11 @@ a li {
 	padding-top: 50px;
 }
 
+.SeihinTable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*========= LoadingのためのCSS ===============*/
 
 /* Loading背景画面設定　*/
