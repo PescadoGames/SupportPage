@@ -23,6 +23,10 @@ a li {
 	list-style-type:none;		/*リストマーカー無しにする*/
 }
 
+.PaddingTop {
+	padding-top: 50px;
+}
+
 /*========= LoadingのためのCSS ===============*/
 
 /* Loading背景画面設定　*/
