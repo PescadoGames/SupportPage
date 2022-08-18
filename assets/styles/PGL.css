@@ -314,81 +314,142 @@ text-align: center;
 /*==================================================
 スライダーのためのcss始まり
 ===================================*/
-.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    width:94%;
-    margin:0 auto;
+.carousel {
+  width: 600px;
+  height: calc(600px * 0.5625);
+  position: relative;
+  margin: 0 auto;
 }
-
-.slider img {
-    width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
-    height:auto;
+.carousel-area {
+  /* リスト数×リスト幅を計算してwidth指定してもいいが、汎用性を考慮してjQueryで計算代入する */
+  height: 100%;
+  position: absolute;
+  display: flex;
 }
-
-.slider .slick-slide {
-	transform: scale(0.8);/*左右の画像のサイズを80%に*/
-	transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
-	opacity: 1;/*透過50%*/
+/* object-fitを使用せずに画像トリミングさせるためにbackgroundで指定 */
+.carousel-list {
+  width: 600px;
+  height: 100%;
+  margin-right: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-.slider .slick-slide.slick-center{
-	transform: scale(1);/*中央の画像のサイズだけ等倍に*/
-	opacity: 1;/*透過なし*/
+@media screen and (max-width: 600px) {
+  .carousel {
+    width: 300px;
+    height: calc(300px * 0.5625);
+  }
+  .carousel-list {
+    width: 300px;
+    height: calc(300px * 0.5625);
+    margin-right: 0;
+  }
 }
-
-.silder li a {
-	color: #D8D8D8
+.carousel-list:nth-child(1) {
+  background-image: url(./img/hamster.jpg);
 }
-
-
-/*矢印の設定*/
-
-/*戻る、次へ矢印の位置*/
-.slick-prev, 
-.slick-next {
-    position: absolute;/*絶対配置にする*/
-    top: 42%;
-    cursor: pointer;/*マウスカーソルを指マークに*/
-    outline: none;/*クリックをしたら出てくる枠線を消す*/
-    border-top: 2px solid #666;/*矢印の色*/
-    border-right: 2px solid #666;/*矢印の色*/
-    height: 15px;
-    width: 15px;
+.carousel-list:nth-child(2) {
+  background-image: url(./img/sheep.jpg);
 }
-
-.slick-prev {/*戻る矢印の位置と形状*/
-    left: -1.5%;
-    transform: rotate(-135deg);
+.carousel-list:nth-child(3) {
+  background-image: url(./img/turtle.jpg);
 }
-
-.slick-next {/*次へ矢印の位置と形状*/
-    right: -1.5%;
-    transform: rotate(45deg);
+.carousel-list:nth-child(4) {
+  background-image: url(./img/bird.jpg);
 }
-
-/*ドットナビゲーションの設定*/
-
-.slick-dots {
-    text-align:center;
-	margin:20px 0 0 0;
+.carousel-list:nth-child(5) {
+  background-image: url(./img/lion.jpg);
 }
-
-.slick-dots li {
-    display:inline-block;
-	margin:0 5px;
+/* clipで非表示指定（スクリーンリーダー対策） */
+.carousel-img {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
 }
-
-.slick-dots button {
-    color: transparent;
-    outline: none;
-    width:8px;/*ドットボタンのサイズ*/
-    height:8px;/*ドットボタンのサイズ*/
-    display:block;
-    border-radius:50%;
-    background:#ccc;/*ドットボタンの色*/
+/*********** スライド送りボタン ***********/
+/* 共有パーツ */
+.arow-wrap {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.slick-dots .slick-active button{
-    background:#333;/*ドットボタンの現在地表示の色*/
+.arrow-btn {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(113, 135, 245, 0.8);
+  border-radius: 50%;
+  transition: .2s;
+}
+.arrow-btn:focus {
+  box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
+}
+.arrow-btn:hover {
+  background-color: rgb(51, 79, 216);
+  box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
+}
+/* 左 */
+.arrow-left {
+  position: relative
+}
+.arrow-left:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fefefe;
+  border-left: 2px solid #fefefe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -50%)rotate(-45deg);
+}
+/* 右 */
+.arrow-right {
+  position: relative
+}
+.arrow-right:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fefefe;
+  border-left: 2px solid #fefefe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -50%)rotate(135deg);
+}
+@media screen and (max-width: 600px) {
+  .arrow-btn {
+    width: 30px;
+    height: 30px;
+  }
+}
+/*********** ページネーション ***********/
+.pagination {
+  width: 150px;
+  margin: 5% auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+.pagination-circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  background-color: rgba(83, 97, 223, 0.3);
+}
+/* jsでtargetクラスがついたら背景色を変える */
+.pagination-circle.target {
+  background-color: rgba(83, 97, 223, 0.8);
 }
 /*==================================================
 スライダーのためのcss終わり
