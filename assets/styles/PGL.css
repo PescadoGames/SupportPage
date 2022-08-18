@@ -13,7 +13,7 @@ html {
 
 body {
   color: #fff;
-  background-image: linear-gradient(0deg,#191919,#00785D);
+  background-image: linear-gradient(0deg,#00785D,#191919);
   font-family: 'Roboto', "Noto Sans JP", sans-serif;
   text-align: center;
   height: 100%;/*高さを100%にして描画エリアをとる*/
@@ -103,7 +103,7 @@ margin-right: auto;
 .InstallButton {
 	left:50%;
 	width:1vh;
-	height:20px
+	height:20px;
 	background-image: linear-gradient(45deg,#005078,#00785D);
 }
 
