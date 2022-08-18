@@ -105,6 +105,9 @@ margin-right: auto;
 	width:100%;
 	height:50px;
 	background-image: linear-gradient(45deg,#005078,#00785D);
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
 }
 
 /* SeihinZyouhouTab.start */
