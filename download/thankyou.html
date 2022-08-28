@@ -104,6 +104,29 @@
 
         });
     </script>
+        <script>
+        $(function(){
+    	$(window).scroll(function (){
+    		$('.fadein').each(function(){
+    			var elemPos = $(this).offset().top;
+    			var scroll = $(window).scrollTop();
+    			var windowHeight = $(window).height();
+    			if (scroll > elemPos - windowHeight + 200){
+    				$(this).addClass('scrollin');
+    			}
+    		});
+    	});
+    });
+  </script>
+  <script>
+  $('#contact').on('click', function() {
+    if ($('.contact').hasClass('contactdeactive')) {
+      $('.contact').removeClass("contactdeactive");
+    } else {
+      $('.contact').addClass("contactdeactive");
+    }
+  });
+  </script>
     <!--△△jQuery△△-->
     <script data-cfasync="false" src="https://www.pescadogames.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://www.pescadogames.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="e99681242d084a2fbe090e20-|49" defer=""></script>
