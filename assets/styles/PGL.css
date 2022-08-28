@@ -762,6 +762,11 @@ dl::after {
 		float: none;
 	}
 }
+@media screen and (max-width:1000px) {
+	.gallery {
+		display: none;
+    }
+}
 /* Slider.end */
 
 /* Progress.start */
