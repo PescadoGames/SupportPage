@@ -110,3 +110,15 @@
 	-o-transition-delay:400ms;
 	-ms-transition-delay:400ms;
 	}
+
+  @media screen and (max-width:800px) {
+  	.fadein h2 {
+      font-size: 100%;
+    }
+
+    .fadein p {
+      font-size: 90%;
+    }
+    #container {
+      padding: 0px;
+    }
