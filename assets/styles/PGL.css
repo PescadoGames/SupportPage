@@ -752,6 +752,8 @@ dl::after {
 		margin: 20px;
 		width: 960px;
 		height: 500px;
+		left: 50%;
+		transform: translateX(-50%);
     }
 	.flickity-viewport {
 		height: 100%;
