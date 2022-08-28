@@ -746,6 +746,20 @@ dl::after {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width:1865px) {
+	.gallery {
+		margin: 20px;
+		width: 960px;
+		height: 500px;
+    }
+	.flickity-viewport {
+		height: 100%;
+    }
+	.seihintab {
+		float: none;
+	}
+}
 /* Slider.end */
 
 /* Progress.start */
