@@ -1,8 +1,4 @@
 @charset "utf-8";
-/*===========================================================*/
-/*機能編  4-2-6 背景色が伸びる（中央から上下）*/
-/*===========================================================*/
-
 
 /*========= ローディング画面のためのCSS ===============*/
 #splash {
@@ -25,102 +21,6 @@
     letter-spacing: 0.2em;
 }
 
-/*========= 画面遷移のためのCSS ===============*/
-
-/*画面遷移アニメーション*/
-.splashbg1,
-.splashbg2{
-    display: none;
-}
-
-/*bodyにappearクラスがついたら出現*/
-body.appear .splashbg1,
-body.appear .splashbg2{
-	display:block;
-}
-
-/*上に消えるエリア*/
-body.appear .splashbg1{
-	animation-name:PageAnime;
-	animation-duration:1.4s;
-	animation-timing-function:ease-in-out;
-	animation-fill-mode:forwards;
-    content: "";
-    position:fixed;
-	z-index: 999;
-    width: 100%;
-    height: 100vh;
-    bottom:50%;
-	left:0;
-    transform: scaleY(1);
-    background-color:#182578;/*伸びる背景色の設定*/
-}
-
-@keyframes PageAnime{
-	0% {
-		transform-origin:top;
-		transform:scaleX(1);
-	}
-
-	100% {
-		transform-origin:top;
-		transform:scaleX(0);
-	}
-}
-
-/*下に消えるエリア*/
-body.appear .splashbg2{
-    animation-name:PageAnime2;
-	animation-duration:1.4s;
-	animation-timing-function:ease-in-out;
-	animation-fill-mode:forwards;
-    content: "";
-    position:fixed;
-	z-index: 999;
-    width: 100%;
-    height: 100vh;
-    top: 50%;
-	left:0;
-    transform: scaleY(1);
-    background-color:#182578;/*伸びる背景色の設定*/
-}
-
-@keyframes PageAnime2{
-	0% {
-		transform-origin:bottom;
-		transform:scaleX(1);
-	}
-	100% {
-		transform-origin:bottom;
-		transform:scaleX(0);
-	}
-}
-
-/*画面遷移の後現れるコンテンツ設定*/
-#container{
-	opacity: 0;/*はじめは透過0に*/
-    position: relative;
-    z-index: 1;
-}
-
-/*bodyにappearクラスがついたら出現*/
-body.appear #container{
-	animation-name:PageAnimeAppear;
-	animation-duration:1s;
-	animation-delay:0.2s;
-	animation-fill-mode:forwards;
-	opacity: 0;
-}
-
-@keyframes PageAnimeAppear{
-	0% {
-	opacity: 0;
-	}
-	100% {
-	opacity: 1;
-}
-}
-
 
 /*===========================================================*/
 /*機能編  5-1-9スクロール途中でヘッダーが消え、上にスクロールすると復活*/
@@ -140,9 +40,9 @@ body.appear #container{
 
 @media screen and (max-width:768px) {
 #header{
-    height:70px;    
+    height:70px;
 }
-    
+
 }
 
 /*　上に上がる動き　*/
@@ -219,7 +119,7 @@ body.appear #container{
     display: none;/*はじめは表示なし*/
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
-    z-index: 999; 
+    z-index: 999;
     width: 100%;
     height: 100vh;
     overflow: auto;
@@ -258,7 +158,7 @@ opacity:0;
 
 /*リストのレイアウト設定*/
 #g-nav li{
-	text-align: center; 
+	text-align: center;
 	list-style: none;
     margin: 0 0 10px 0;
 }
@@ -273,7 +173,7 @@ opacity:0;
 	font-weight: bold;
 }
 
-    
+
 }
 
 @keyframes gnaviAnime{
@@ -308,8 +208,8 @@ opacity: 1;
     height:94px;
     background:#182578;
 }
-	
-/*×に変化*/	
+
+/*×に変化*/
 .openbtn span{
     display: inline-block;
     transition: all .4s;
@@ -322,7 +222,7 @@ opacity: 1;
   }
 
 .openbtn span:nth-of-type(1) {
-	top:33px;	
+	top:33px;
 }
 
 .openbtn span:nth-of-type(2) {
@@ -357,13 +257,13 @@ opacity: 1;
         width:70px;
         height: 70px;
     }
-/*×に変化*/	
+/*×に変化*/
 .openbtn span{
     left: 17px;
  }
 
 .openbtn span:nth-of-type(1) {
-	top:20px;	
+	top:20px;
 }
 
 .openbtn span:nth-of-type(2) {
@@ -383,7 +283,7 @@ opacity: 1;
     top: 40px;
     left: 22px;
 }
-    
+
 }
 
 
@@ -480,6 +380,11 @@ opacity: 1;
 
 /*タイムライン全体の設定*/
 
+.timeline {
+	width:40%;
+	padding-top: 80px;
+}
+
 .timeline li{
     /*線の起点とするためrelativeを設定*/
     position: relative;
@@ -516,6 +421,77 @@ opacity: 1;
 }
 
 /*==================================================
+機能編 　9-1-5 スクロールをするとエリアの高さに合わせて線が伸びる
+===================================*/
+
+/*========= バー表示のためのCSS ===============*/
+
+/*タイムライン全体の設定*/
+
+.timeline-sp {
+	padding-top: 80px;
+}
+
+.timeline-sp li{
+    /*線の起点とするためrelativeを設定*/
+    position: relative;
+	list-style: none;
+	padding:0 0 20px 0;
+}
+
+.timeline-sp dl{
+	margin:0 0 20px 3em;
+}
+
+
+/*絶対配置で線を設定*/
+.border-line {
+    /*線の位置*/
+	position: absolute;
+	left:0.2em;
+	top:0;
+	width:2px;/*線の太さ*/
+	height:0;/*はじめは高さを0に*/
+	background: #999999;
+}
+
+/*タイムラインの見出し横の丸の位置と形状*/
+.timeline-sp li::after{
+	content:'';
+	position: absolute;
+	top:0;
+	left:0;
+	width:10px;
+	height: 10px;
+	background:#999999;
+	border-radius: 50%;
+}
+
+@media screen and (max-width:800px) {
+
+	.timeline {
+		display: none;
+	}
+
+	.timeline-sp {
+		display: block;
+	}
+
+}
+
+@media screen and (min-width:800px) {
+
+	.timeline {
+		display: block;
+	}
+
+	.timeline-sp {
+		display: none;
+	}
+
+}
+
+/*==================================================
 機能編 　7-1-5	背景が流れる（中央から横全体）
 ===================================*/
 
@@ -531,7 +507,7 @@ opacity: 1;
     padding: 40px 8px;
     text-align: center;
     outline: none;
-    /*アニメーションの指定*/   
+    /*アニメーションの指定*/
     transition: ease .2s;
 }
 
@@ -638,7 +614,7 @@ opacity: 1;
 .btnlinestretches::before,
 .btnlinestretches::after {
 	content:'';
-    /*絶対配置で線の位置を決める*/   
+    /*絶対配置で線の位置を決める*/
 	position:absolute;
 	border:solid #333;
 	width:10px;
@@ -818,4 +794,167 @@ opacity:0;
 		/* 要素を元の位置に移動 */
 		opacity: 1;
 	}
+}
+
+.padding-180top {
+
+	padding-top: 180px;
+
+}
+
+/*tabの形状*/
+.tab{
+	display: flex;
+	flex-wrap: wrap;
+}
+.tab li a{
+	display: block;
+	background:#ddd;
+	margin:0 2px;
+	padding:10px 20px;
+	color: black;
+	text-decoration: none;
+}
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a{
+	background:#fff;
+}
+
+/*エリアの表示非表示と形状*/
+.area {
+	display: none;/*はじめは非表示*/
+	opacity: 0;/*透過0*/
+	background: #fff;
+	padding:50px 20px;
+}
+
+.area li a {
+	color:black;
+}
+
+.area h2 {
+	color: #009bec;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+	from {
+		transform:translateX(10%);
+		opacity: 0;
+		border-radius: 50px;
+	}
+	to {
+		transform:translateX(0%);
+		opacity: 1;
+		border-radius: 0px;
+	}
+}
+
+.Osirase {
+	position:absolute;
+	background: #fff;
+	width: 50%;
+	right: 0;
+	bottom: 10%;
+	z-index: 2;
+	transition:1s;
+	border-radius: 30px;
+}
+
+#OsiraseButton {
+	position:absolute;
+	width: 10%;
+	height: 100%;
+	z-index: 2;
+	padding: 5px;
+	transition:1s;
+}
+
+.OsiraseNews {
+	background: #fff;
+	width: 90%;
+	height: 100%;
+	z-index: 2;
+	margin-left: auto;
+}
+
+.OsiraseButtonTrue {
+	transform: scaleX(-1);
+}
+
+.OsiraseButtonFalse {
+	transform: scaleX(1);
+}
+
+@media screen and (max-width:800px) {
+	.Osirase {
+		display: none;
+	}
+}
+
+.contact {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 9999;
+	transition:0.5s;
+}
+
+.contact a{
+	top: 0;
+}
+
+.contactdeactive {
+	transform: translateX(100%);
+}
+
+.contacttab{
+	display: flex;
+	flex-wrap: wrap;
+	transform: translateX(30%);
+}
+.contacttab li a{
+	display: block;
+	background:#ddd;
+	margin:0 2px;
+	padding:10px 20px;
+	color: black;
+	text-decoration: none;
+}
+/*liにactiveクラスがついた時の形状*/
+.contacttab li.active a{
+	background:#fff;
+}
+
+.heading2{
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: #333;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #0066DB;
+    padding: 14px 40px;
+    outline: none;
+    color: #151515;
+    border-radius: 24px;
+    transition: 0.75s;
+    cursor: pointer;
+}
+
+.heading2:hover{
+    background: #0066DB;
+    color: #fff;
 }

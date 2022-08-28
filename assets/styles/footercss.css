@@ -1,26 +1,12 @@
-@charset "utf-8";
-/* フッター用のCSS */
-
-body{
-    background:#182578;
-    font-family: 'Noto Serif JP', serif;
-    color: #333;
-	font-size:1rem;
-    line-height:1.85;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-    word-wrap: break-word;
-}
-
 /* footer */
 
 #footer {
+    bottom: 0;
     position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: column;
     background: linear-gradient(45deg, #06f, #d3d3d3);
 }
 
@@ -91,7 +77,7 @@ body{
     #footer .footer-link {
         font-size: 0.9rem;
         padding: 0 0 0 50px;
-        /* display: flex; */
+        display: flex;
     }
 
         #footer .footer-link a {
@@ -137,7 +123,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 20vh;
+        height: 0px;
         padding: 20px;
     }
 
@@ -145,6 +131,21 @@ body{
             /* background:#fff94b; */
             color: #fff;
         }
+
+    #footer #URL {
+        /* background:#fff94b; */
+        color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        padding: 20px;
+    }
+
+    #footer #URL li{
+      margin-left: 10px;
+    }
 
     #footer #page-top {
         position: absolute;
@@ -228,14 +229,9 @@ body{
     }
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:950px) {
 
-    #footer .footer-r .map-address,
-    #footer .footer-r .map-block {
-        width: 100%;
-    }
-
-    #footer .footer-r .map-address {
-        margin: 0 0 50px 0;
+    #footer #URL{
+      display: none;
     }
 }
