@@ -961,3 +961,29 @@ dl::after {
     background: #0066DB;
     color: #fff;
 }
+
+.installDialog {
+  position: fixed;
+  background-color: #252525;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%)
+  translateY(-40%);
+  padding: 30px;
+  z-index: 99;
+  border-radius: 30px;
+  opacity: 0;
+  transition:0.5s;
+}
+
+.installDialogShow {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.CloseButton {
+  position: absolute;
+  right:10px;
+  top: 10px;
+}
