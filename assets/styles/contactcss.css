@@ -111,8 +111,8 @@
 	-ms-transition-delay:400ms;
 	}
 
-  @media screen and (max-width:800px) {
-  	.fadein h2 {
+  @media screen and (max-width:500px) {
+    .fadein h2 {
       font-size: 100%;
     }
 
