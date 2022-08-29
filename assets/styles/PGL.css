@@ -984,7 +984,7 @@ dl::after {
   left: 50%;
   top: 50%;
   transform: translateX(-50%)
-  translateY(-40%);
+  translateY(-20%);
   padding: 30px;
   z-index: 99;
   border-radius: 30px;
