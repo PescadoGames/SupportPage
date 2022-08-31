@@ -1,67 +1,225 @@
 <html lang="ja">
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-<link rel="stylesheet" type="text/css" href="https://www.pescadogames.com/assets/styles/reset.css">
-<link rel="stylesheet" type="text/css" href="https://www.pescadogames.com/assets/styles/PGL.css">
-<link rel="stylesheet" type="text/css" href="../assets/styles/index.css">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | PescadoGames</title>
+    <meta name="description" content="PescadoGamesのホームページです">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="PescadoGames | Home" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.pescadogames.com/index.html" />
+    <meta property="og:image" content="/assets/icons/PGBlueLogo-toumei.png" />
+    <meta property="og:image" content="/assets/icons/PGBlueLogo-toumei.png">
+    <meta property="og:locale" content="ja_JP">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/parts.css">
+    <link rel="stylesheet" href="assets/styles/footercss.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/slidercss.css">
+    <link rel="stylesheet" href="assets/styles/indexcss.css">
+    <link rel="stylesheet" href="assets/styles/sakura.css">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush%7CNoto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://www.pescadogames.com/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="https://www.pescadogames.com/favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMK183GM24" type="e99681242d084a2fbe090e20-text/javascript"></script>
+    <script type="e99681242d084a2fbe090e20-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TMK183GM24');
+    </script>
 </head>
 <body>
+  <div id="splash">
+    <img src="https://www.pescadogames.com/assets/icons/PGBlueLogo-toumei.png" class="LoadingLogo">
+    <div id="splash_text"></div>
+    <div class="loader_cover"></div><!--上に上がるエリア-->
+  <!--/splash--></div>
 
-<div id="splash">
-<div id="splash_text"></div>
-<div class="loader_cover loader_cover-up"></div><!--上に上がるエリア-->
-<div class="loader_cover loader_cover-down"></div><!--下に下がるエリア-->
-<!--/splash--></div>
+    <div class="contact contactdeactive">
+      <a href="contact.html" class="heading2">うまく表示されない場合はこちらのボタンから。</a>
+      <iframe src="iframecontact.html" height="80%" width="100%" frameborder="0">iFrameに対応していないブラウザを使用しています。<br>ブラウザを更新するか、ほかのブラウザを使用してください。</iframe>
+    </div>
+    <!--Header-->
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__title header-title">
+                <a href=""><img src="https://www.pescadogames.com/assets/icons/PGBlueLogo-toumei.png"></a>
+            </h1>
 
-  <!-- ヘッダー -->
-  <header class="header">
+            <nav class="header__nav nav" id="js-nav">
+                <ul class="nav__items nav-items">
+                    <li class="nav-items__item"><a href="">ホーム</a></li>
+                    <li class="nav-items__item"><a href="about.html">概要</a></li>
+                    <li class="nav-items__item"><a href="services.html">製品・サービス</a></li>
+                    <li class="nav-items__item"><a href="news.html">お知らせ</a></li>
+                </ul>
+            </nav>
 
-    <!--▽▽ヘッダーリスト▽▽-->
-    <nav class="pc">  <!--pcクラスを追記-->
-      <ul>
-        <li><a href="../">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="news.html">NEWS</a></li>
-        <li><a href="../game/index.html">GAME</a></li>
-        <li><a href="../app/index.html">APP</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="../game/disbaroahead.html">TEST</a></li>
-      </ul>
-    </nav>
-    <!--△△ヘッダーリスト△△-->
-  </header>
-<div id="particles-js"></div>
+            <button href="contact" class="header__title_tell" id="contact"><img src="https://www.pescadogames.com/assets/image/Tell.svg"><span style="font-size:10px">お問い合わせ</span></a>
 
-<div id="container">
+            <button class="header__hamburger hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGJlsx7shQkzj8e6n9Zh7W243F74J1zIH3DxbM-mMqnLGq0Q/viewform" frameborder="0" height="100%" width="100%" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">iFrameに非対応の可能性があります。</iframe>
+        </div>
+    </header>
+  
+    <div id="particles-js"></div>
+    <div id="container">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGJlsx7shQkzj8e6n9Zh7W243F74J1zIH3DxbM-mMqnLGq0Q/viewform" frameborder="0" height="100%" width="100%" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">iFrameに非対応の可能性があります。</iframe>
+        <!--/container-->
+    </div>
+    <!--コンテンツ本体終わり-->
 
-<!--/container--></div>
+    <div id="footer">
+            <footer id="copyright">
+                <small>&copy; PescadoGames All right reserved.</small>
+            </footer>
+            <footer id="URL">
+              <ul class="footer-link">
+                <li><a href="#">ホーム</a></li>
+                <li><a href="about">概要</a></li>
+                <li><a href="services"><span>製品・サービス</span></a></li>
+                <li><a href="news">お知らせ</a></li>
+                <li><a href="contact">お問い合わせ</a></li>
+              </ul>
+              <ul class="footer-link">
+                <li><a href="https://twitter.com/PescadoGames">Twitter(PG)</a></li>
+                <li><a href="https://twitter.com/PescadoGamesBOT">Twitter(PGBOT)</a></li>
+                <li><a href="https://discord.gg/9HC3wWQSTV"><span>Discord(PG)</span></a></li>
+                <li><a href="https://discord.gg/Q6nzpQbQRa"><span>Discord(PGBOT)</span></a></li>
+              </ul>
+            </footer>
+        <div id="page-top"><a href="#"><span></span></a></div>
+    </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!--▽▽jQuery▽▽-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/allpage.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/sakura.js"></script>
+    <script src="assets/js/indexjs.js"></script>
+    <script>
+        const ham = $('#js-hamburger');
+        const nav = $('#js-nav');
+        ham.on('click', function () { //ハンバーガーメニューをクリックしたら
+            ham.toggleClass('active'); // ハンバーガーメニューにactiveクラスを付け外し
+            nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外し
 
-<script>
-    $(function(){
-  $(window).scroll(function (){
-    $('.fadein').each(function(){
-      var elemPos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if (scroll > elemPos - windowHeight + 200){
-        $(this).addClass('scrollin');
+        });
+    </script>
+    <script>
+    //線が伸びるための設定を関数でまとめる
+function ScrollTimelineAnime(){
+	$('.timeline li').each(function(){// それぞれのli要素の
+		var elemPos = $(this).offset().top;// 上からの高さ取得
+		var scroll = $(window).scrollTop();// スクロール値取得
+		var windowHeight = $(window).height();// windowの高さ取得
+		var startPoint = 700; //線をスタートさせる位置を指定※レイアウトによって調整してください
+		if (scroll >= elemPos - windowHeight-startPoint){
+			var H = $(this).outerHeight(true)//liの余白と高さを含めた数値を取得
+			//スクロール値から要素までの高さを引いた値を、liの高さの半分のパーセントで出す
+			var percent = (scroll+startPoint - elemPos) / (H/2) *100;//liの余白と高さの半分で線を100％に伸ばす
+
+			// 100% を超えたらずっと100%を入れ続ける
+			if(percent  > 100){
+				percent  = 100;
+			}
+			// ボーダーの長さをセット
+			$(this).children('.border-line').css({
+				height: percent + "%", //CSSでパーセント指定
+			});
+		}
+	});
+}
+
+//線が伸びるための設定を関数でまとめる
+function SPScrollTimelineAnime(){
+$('.timeline-sp li').each(function(){// それぞれのli要素の
+var elemPos = $(this).offset().top;// 上からの高さ取得
+var scroll = $(window).scrollTop();// スクロール値取得
+var windowHeight = $(window).height();// windowの高さ取得
+var startPoint = 600; //線をスタートさせる位置を指定※レイアウトによって調整してください
+if (scroll >= elemPos - windowHeight-startPoint){
+  var H = $(this).outerHeight(true)//liの余白と高さを含めた数値を取得
+  //スクロール値から要素までの高さを引いた値を、liの高さの半分のパーセントで出す
+  var percent = (scroll+startPoint - elemPos) / (H/2) *100;//liの余白と高さの半分で線を100％に伸ばす
+
+  // 100% を超えたらずっと100%を入れ続ける
+  if(percent  > 100){
+    percent  = 100;
+  }
+  // ボーダーの長さをセット
+  $(this).children('.border-line').css({
+    height: percent + "%", //CSSでパーセント指定
+  });
+}
+});
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).on('scroll', function(){
+  SPScrollTimelineAnime();// 線が伸びる関数を呼ぶ
+	ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
+});
+
+// ページが読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function(){
+  SPScrollTimelineAnime();// 線が伸びる関数を呼ぶ
+	ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
+});
+    </script>
+    <script>
+    $('#contact').on('click', function() {
+      if ($('.contact').hasClass('contactdeactive')) {
+        $('.contact').removeClass("contactdeactive");
+      } else {
+        $('.contact').addClass("contactdeactive");
       }
     });
-  });
-});
-</script>
 
-<!--自作のJS-->
-<script src="../assets/js/allpage.js"></script>
-<script src="../assets/js/kikagaku.js"></script>
-<script src="../assets/js/slider.js"></script>
+    //任意のタブにURLからリンクするための設定
+    function GethashID (hashIDName){
+    	if(hashIDName){
+    		//タブ設定
+    		$('.tab li').find('a').each(function() { //タブ内のaタグ全てを取得
+    			var idName = $(this).attr('href'); //タブ内のaタグのリンク名（例）#lunchの値を取得
+    			if(idName == hashIDName){ //リンク元の指定されたURLのハッシュタグ（例）http://example.com/#lunch←この#の値とタブ内のリンク名（例）#lunchが同じかをチェック
+    				var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
+    				$('.tab li').removeClass("active"); //タブ内のliについているactiveクラスを取り除き
+    				$(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
+    				//表示させるエリア設定
+    				$(".area").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
+    				$(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加
+    			}
+    		});
+    	}
+    }
+
+    //タブをクリックしたら
+    $('.tab a').on('click', function() {
+    	var idName = $(this).attr('href'); //タブ内のリンク名を取得
+    	GethashID (idName);//設定したタブの読み込みと
+    	return false;//aタグを無効にする
+    });
+    // 上記の動きをページが読み込まれたらすぐに動かす
+    $(window).on('load', function () {
+        $('.tab li:first-of-type').addClass("active"); //最初のliにactiveクラスを追加
+        $('.area:first-of-type').addClass("is-active"); //最初の.areaにis-activeクラスを追加
+    	var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
+    	GethashID (hashName);//設定したタブの読み込み
+    });
+    </script>
+    <!--△△jQuery△△-->
+    <script data-cfasync="false" src="https://www.pescadogames.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
 </body>
 </html>
