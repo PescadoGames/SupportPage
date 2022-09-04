@@ -48,6 +48,8 @@ margin-right: auto;
 	opacity : 0;
 	transform : translate(0, 50px);
 	transition : all 500ms;
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 	}
 
 /* 画面内に入った状態 */
