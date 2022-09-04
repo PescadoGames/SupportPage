@@ -34,7 +34,6 @@ margin-right: auto;
 
 /* 画面外にいる状態 */
 .fadein {
-	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 	margin : 2%;
 	padding : 0.5em;
 	text-align : center;
