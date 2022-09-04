@@ -320,7 +320,8 @@ text-align: center;
 }
 
 .slider img {
-    height:auto;
+  height:auto;
+	width: 100%;
 }
 
 .slider .slick-slide {
