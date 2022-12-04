@@ -732,6 +732,7 @@ dl::after {
 /* external css: flickity.css */
 .gallery {
   margin: 50px;
+  margin-left: 1.25%;
   width: 960px;
   height: 500px;
 }
@@ -972,4 +973,11 @@ dl::after {
   width: 50%;
   margin-left: 1.25%;
   float: left;
+}
+
+.SeihinTitle {
+  font-size: 300%;
+  margin-right: 98.75%;
+  margin-left: 1.25%;
+  margin-top: 10px;
 }
