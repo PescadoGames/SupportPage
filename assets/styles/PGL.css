@@ -961,3 +961,15 @@ dl::after {
   right:10px;
   top: 10px;
 }
+
+.Siyou {
+	width: 45%;
+	float: right;
+	margin-right: 1.25%;
+}
+
+.siyoutable {
+  width: 50%;
+  margin-left: 1.25%;
+  float: left;
+}
