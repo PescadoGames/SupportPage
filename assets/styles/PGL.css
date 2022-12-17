@@ -19,7 +19,7 @@ body {
   height: 100%;/*高さを100%にして描画エリアをとる*/
 }
 
-.light-theme {
+.light-theme +td +a {
   background: #F4F5F7;
   color: #333333;
 }
@@ -267,8 +267,8 @@ margin-right: auto;
 
 .headerlight{
 	background-color: #F4F5F7;
-	border-image: linear-gradient(125deg,#00aaff,#00ffc6);
-	color:#333;
+	border-image: linear-gradient(125deg,#00ffc6,#00aaff);
+	border-image-slice: 1;
 }
 
 .logo {
@@ -305,6 +305,10 @@ margin-right: auto;
   padding: 0 20px;
   user-select: none;
   -webkit-user-drag: none;
+}
+
+.headerlighta + .header a {
+	color:#333;
 }
 
 table {
