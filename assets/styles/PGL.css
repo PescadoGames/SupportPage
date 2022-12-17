@@ -19,6 +19,11 @@ body {
   height: 100%;/*高さを100%にして描画エリアをとる*/
 }
 
+.light-theme {
+  background: #F4F5F7;
+  color: #333333;
+}
+
 a li {
 	list-style-type:none;		/*リストマーカー無しにする*/
 }
@@ -28,8 +33,9 @@ a li {
 }
 
 .SeihinTable {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 20px;
 }
 
 /*========= LoadingのためのCSS ===============*/
@@ -116,6 +122,11 @@ margin-right: auto;
 	background-image: linear-gradient(45deg,#005078,#00785D);
 	border-radius: 30px;
 	margin: 20px 0 20px 0;
+}
+
+.DarkButton {
+	background-image: linear-gradient(45deg,#00aaff,#00ffc6);
+	color:#fff;
 }
 
 /* SeihinZyouhouTab.start */
@@ -240,7 +251,7 @@ margin-right: auto;
 	border: 1px solid #ccc;
 }
 
-.header {
+.header{
   height: 50px;
   width: 100%;
   padding: 0px 15px;
@@ -252,6 +263,12 @@ margin-right: auto;
   position: fixed;
   top: 0;
   display: flex;
+}
+
+#headerdark{
+	background-color: #F4F5F7;
+	border-image: linear-gradient(125deg,#00aaff,#00ffc6);
+	color:#333;
 }
 
 .logo {
@@ -736,6 +753,7 @@ dl::after {
   margin-left: 1.25%;
   width: 960px;
   height: 500px;
+  margin-top: 0;
 }
  
 .gallery-cell {
@@ -757,6 +775,7 @@ dl::after {
 		height: 500px;
 		margin-left: auto;
 	  margin-right: auto;
+		margin-top: 0;
     }
 	.flickity-viewport {
 		height: 100%;
