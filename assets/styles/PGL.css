@@ -260,6 +260,7 @@ margin-right: auto;
   border-image: linear-gradient(125deg,#00a56a,#0078a5);
   border-image-slice: 1;
   z-index:10;
+	position: fixed;
   top: 0;
   display: flex;
 }
