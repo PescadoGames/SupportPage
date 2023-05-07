@@ -1,0 +1,10 @@
+[
+	{
+		"title": "AutoUpdaterの導入方法",
+		"url": "/docs/autoupdater/how-to-use-autoupdater.html"
+	},
+	{
+		"title": "ソフトウェアの更新を強制させる方法",
+		"url": "/docs/autoupdater/how-to-enable-enforcemode.html"
+	}
+]
